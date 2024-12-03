@@ -34,7 +34,7 @@ npc:
       owner:
         owner: MadPikaxe
         uuid: 3d482406-7d31-3611-bc19-a6116a17484a
-    traitnames: inventory,owner,lookclose,type,spawned,mounttrait,equipment,location,gravity,scoreboardtrait
+    traitnames: scoreboardtrait,gravity,type,spawned,inventory,location,owner,equipment,lookclose,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -66,7 +66,7 @@ npc:
       owner:
         owner: MadPikaxe
         uuid: 3d482406-7d31-3611-bc19-a6116a17484a
-    traitnames: inventory,owner,type,spawned,mounttrait,equipment,location,gravity,scoreboardtrait
+    traitnames: scoreboardtrait,gravity,type,spawned,inventory,location,owner,equipment,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -97,7 +97,7 @@ npc:
       owner:
         owner: MadPikaxe
         uuid: 3d482406-7d31-3611-bc19-a6116a17484a
-    traitnames: inventory,owner,type,spawned,mounttrait,equipment,location,gravity,scoreboardtrait
+    traitnames: scoreboardtrait,gravity,type,spawned,inventory,location,owner,equipment,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -129,7 +129,7 @@ npc:
       owner:
         owner: MadPikaxe
         uuid: 3d482406-7d31-3611-bc19-a6116a17484a
-    traitnames: inventory,owner,type,spawned,mounttrait,equipment,gravity,location,scoreboardtrait
+    traitnames: scoreboardtrait,gravity,type,spawned,location,inventory,owner,equipment,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -181,7 +181,7 @@ npc:
       owner:
         owner: MadPikaxe
         uuid: 3d482406-7d31-3611-bc19-a6116a17484a
-    traitnames: inventory,lookclose,owner,type,spawned,mounttrait,equipment,mirror,gravity,location,scoreboardtrait
+    traitnames: scoreboardtrait,gravity,type,spawned,location,inventory,owner,equipment,lookclose,mirror,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -203,7 +203,7 @@ npc:
       owner:
         owner: MadPikaxe
         uuid: 3d482406-7d31-3611-bc19-a6116a17484a
-    traitnames: inventory,owner,type,spawned,mounttrait,location
+    traitnames: type,spawned,inventory,location,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -247,7 +247,7 @@ npc:
       owner:
         owner: Mad_Maniac
         uuid: 915c867a-6d49-39c9-9a12-e6e043334994
-    traitnames: inventory,lookclose,owner,type,spawned,mounttrait,equipment,location,gravity,scoreboardtrait
+    traitnames: scoreboardtrait,gravity,type,spawned,inventory,location,owner,equipment,lookclose,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -291,7 +291,7 @@ npc:
       owner:
         owner: Mad_Pickaxe
         uuid: e63c9801-19f9-3ff1-9775-3fbe8869401d
-    traitnames: inventory,owner,lookclose,type,spawned,mounttrait,equipment,location,gravity,scoreboardtrait
+    traitnames: scoreboardtrait,gravity,type,spawned,inventory,location,owner,equipment,lookclose,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -317,7 +317,7 @@ npc:
       owner:
         owner: Mad_Pickaxe
         uuid: e63c9801-19f9-3ff1-9775-3fbe8869401d
-    traitnames: inventory,commandtrait,owner,type,spawned,mounttrait,equipment,location,gravity,scoreboardtrait
+    traitnames: scoreboardtrait,gravity,type,spawned,inventory,location,owner,commandtrait,equipment,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -352,7 +352,7 @@ npc:
       owner:
         owner: MadPikaxe
         uuid: eaecf18d-250f-33fe-8f05-26d1754797e1
-    traitnames: inventory,owner,type,spawned,mounttrait,equipment,location,gravity,scoreboardtrait
+    traitnames: scoreboardtrait,gravity,type,spawned,location,inventory,owner,equipment,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -369,7 +369,7 @@ npc:
         yaw: '0.0'
         pitch: '0.0'
       spawned: true
-    traitnames: type,spawned,mounttrait,location
+    traitnames: type,spawned,location,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -386,7 +386,7 @@ npc:
         z: '0.0'
         yaw: '0.0'
         pitch: '0.0'
-    traitnames: type,spawned,mounttrait,location
+    traitnames: type,spawned,location,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -403,7 +403,7 @@ npc:
         z: '0.0'
         yaw: '0.0'
         pitch: '0.0'
-    traitnames: type,spawned,mounttrait,location
+    traitnames: type,spawned,location,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -420,7 +420,7 @@ npc:
         z: '0.0'
         yaw: '0.0'
         pitch: '0.0'
-    traitnames: type,spawned,mounttrait,location
+    traitnames: type,spawned,location,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -462,7 +462,7 @@ npc:
       owner:
         owner: MadPikaxe
         uuid: eaecf18d-250f-33fe-8f05-26d1754797e1
-    traitnames: inventory,lookclose,owner,type,spawned,mounttrait,equipment,location,gravity,scoreboardtrait
+    traitnames: scoreboardtrait,gravity,type,spawned,inventory,location,owner,equipment,lookclose,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -479,7 +479,7 @@ npc:
         yaw: '0.0'
         pitch: '0.0'
       spawned: true
-    traitnames: type,spawned,mounttrait,location
+    traitnames: type,spawned,location,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -522,7 +522,7 @@ npc:
       owner:
         owner: MadPikaxe
         uuid: eaecf18d-250f-33fe-8f05-26d1754797e1
-    traitnames: inventory,owner,lookclose,type,spawned,mounttrait,equipment,gravity,location,scoreboardtrait
+    traitnames: scoreboardtrait,gravity,type,spawned,inventory,location,owner,equipment,lookclose,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false

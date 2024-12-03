@@ -1,493 +1,561 @@
-[08:56:09] [Server thread/INFO]: Starting minecraft server version 1.8.8
-[08:56:09] [Server thread/INFO]: Loading properties
-[08:56:09] [Server thread/INFO]: Default game type: SURVIVAL
-[08:56:09] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-21fe707-e1ebe52 (MC: 1.8.8) (Implementing API version 1.8.8-R0.1-SNAPSHOT)
-[08:56:09] [Server thread/INFO]: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
-[08:56:10] [Server thread/INFO]: Debug logging is disabled
-[08:56:10] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[08:41:08] [Server thread/INFO]: Starting minecraft server version 1.8.8
+[08:41:08] [Server thread/INFO]: Loading properties
+[08:41:08] [Server thread/INFO]: Default game type: SURVIVAL
+[08:41:08] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-21fe707-e1ebe52 (MC: 1.8.8) (Implementing API version 1.8.8-R0.1-SNAPSHOT)
+[08:41:08] [Server thread/INFO]: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+[08:41:08] [Server thread/INFO]: Debug logging is disabled
+[08:41:08] [Server thread/INFO]: Server Ping Player Sample Count: 12
 
-[08:56:10] [Server thread/INFO]: Using 4 threads for Netty based IO
-[08:56:10] [Server thread/INFO]: Generating keypair
-[08:56:10] [Server thread/INFO]: Starting Minecraft server on *:25565
-[08:56:10] [Server thread/INFO]: Using epoll channel type
-[08:56:10] [Server thread/INFO]: Set PluginClassLoader as parallel capable
-[08:56:11] [Server thread/WARN]: java.lang.NoSuchFieldException: ucp
+[08:41:08] [Server thread/INFO]: Using 4 threads for Netty based IO
+[08:41:08] [Server thread/INFO]: Generating keypair
+[08:41:08] [Server thread/INFO]: Starting Minecraft server on *:25565
+[08:41:08] [Server thread/INFO]: Using epoll channel type
+[08:41:09] [Server thread/ERROR]: Could not load 'plugins/SkinsRestorer.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
+	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:162) ~[spigot.jar:git-Spigot-21fe707-e1ebe52]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:133) ~[spigot.jar:git-Spigot-21fe707-e1ebe52]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugins(CraftServer.java:292) ~[spigot.jar:git-Spigot-21fe707-e1ebe52]
+	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:198) ~[spigot.jar:git-Spigot-21fe707-e1ebe52]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:525) ~[spigot.jar:git-Spigot-21fe707-e1ebe52]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.zip.ZipException: zip END header not found
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1649) ~[?:?]
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1657) ~[?:?]
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1495) ~[?:?]
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1458) ~[?:?]
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:724) ~[?:?]
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:251) ~[?:?]
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:180) ~[?:?]
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:345) ~[?:?]
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:316) ~[?:?]
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:282) ~[?:?]
+	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:150) ~[spigot.jar:git-Spigot-21fe707-e1ebe52]
+	... 5 more
+[08:41:09] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[08:41:09] [Server thread/WARN]: java.util.zip.ZipException: zip END header not found
 
-[08:56:11] [Server thread/WARN]: 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+[08:41:09] [Server thread/WARN]: 	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1649)
 
-[08:56:11] [Server thread/WARN]: 	at me.arasple.mc.trhologram.Plugin$Loader.addPath(Plugin.java:672)
+[08:41:09] [Server thread/WARN]: 	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1657)
 
-[08:56:11] [Server thread/WARN]: 	at me.arasple.mc.trhologram.Plugin.init(Plugin.java:396)
+[08:41:09] [Server thread/WARN]: 	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1495)
 
-[08:56:11] [Server thread/WARN]: 	at me.arasple.mc.trhologram.Plugin.<clinit>(Plugin.java:148)
+[08:41:09] [Server thread/WARN]: 	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1458)
 
-[08:56:11] [Server thread/WARN]: 	at java.base/java.lang.Class.forName0(Native Method)
+[08:41:09] [Server thread/WARN]: 	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:724)
 
-[08:56:11] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:534)
+[08:41:09] [Server thread/WARN]: 	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:251)
 
-[08:56:11] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:513)
+[08:41:09] [Server thread/WARN]: 	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:180)
 
-[08:56:11] [Server thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:64)
+[08:41:09] [Server thread/WARN]: 	at java.base/java.util.jar.JarFile.<init>(JarFile.java:345)
 
-[08:56:11] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:131)
+[08:41:09] [Server thread/WARN]: 	at java.base/java.util.jar.JarFile.<init>(JarFile.java:316)
 
-[08:56:11] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:329)
+[08:41:09] [Server thread/WARN]: 	at java.base/java.util.jar.JarFile.<init>(JarFile.java:282)
 
-[08:56:11] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:251)
+[08:41:09] [Server thread/WARN]: 	at me.arasple.mc.trhologram.Plugin.getPluginDescription(Plugin.java:308)
 
-[08:56:11] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugins(CraftServer.java:292)
+[08:41:09] [Server thread/WARN]: 	at me.arasple.mc.trhologram.Plugin.checkLibPlugin(Plugin.java:282)
 
-[08:56:11] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:198)
+[08:41:09] [Server thread/WARN]: 	at me.arasple.mc.trhologram.Plugin.init(Plugin.java:386)
 
-[08:56:11] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:525)
+[08:41:09] [Server thread/WARN]: 	at me.arasple.mc.trhologram.Plugin.<clinit>(Plugin.java:148)
 
-[08:56:11] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[08:41:09] [Server thread/WARN]: 	at java.base/java.lang.Class.forName0(Native Method)
 
-[08:56:11] [Server thread/INFO]: [0;31;22m[TabooLib] [0;31;1m主运行库未完成初始化, 插件停止加载.[m
+[08:41:09] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:534)
 
-[08:56:12] [Server thread/INFO]: [BlockParticles] Loading BlockParticles v1.9.7.2
-[08:56:12] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.10.9
-[08:56:12] [Server thread/INFO]: [PrivateMessage] Loading PrivateMessage v1.3
-[08:56:12] [Server thread/INFO]: [BackToLobby] Loading BackToLobby v1.1
-[08:56:12] [Server thread/INFO]: [Images] Loading Images v2.1.7
-[08:56:12] [Server thread/INFO]: [MOTD] Loading MOTD v2.3.2
-[08:56:12] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v4.4.2
-[08:56:12] [Server thread/INFO]: [ViaVersion] ViaVersion 4.4.2 is now loaded, injecting!
-[08:56:13] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.12 -> 1.13 mappings...
-[08:56:13] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.13 -> 1.13.2 mappings...
-[08:56:13] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.13.2 -> 1.14 mappings...
-[08:56:13] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.14 -> 1.15 mappings...
-[08:56:13] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.15 -> 1.16 mappings...
-[08:56:13] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.16 -> 1.16.2 mappings...
-[08:56:13] [Via-Mappingloader-5/INFO]: [ViaVersion] Loading 1.16.2 -> 1.17 mappings...
-[08:56:13] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.17 -> 1.18 mappings...
-[08:56:14] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.18 -> 1.19 mappings...
-[08:56:14] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v4.4.2
-[08:56:14] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[08:56:14] [Via-Mappingloader-1/INFO]: [ViaBackwards] Loading 1.10 -> 1.9.4 mappings...
-[08:56:14] [Via-Mappingloader-1/INFO]: [ViaBackwards] Loading 1.11 -> 1.10 mappings...
-[08:56:15] [Via-Mappingloader-3/INFO]: [ViaBackwards] Loading 1.12 -> 1.11 mappings...
-[08:56:15] [Via-Mappingloader-3/INFO]: [ViaBackwards] Loading 1.13 -> 1.12 mappings...
-[08:56:15] [Via-Mappingloader-5/INFO]: [ViaBackwards] Loading 1.13.2 -> 1.13 mappings...
-[08:56:15] [Via-Mappingloader-5/INFO]: [ViaBackwards] Loading 1.14 -> 1.13.2 mappings...
-[08:56:15] [Via-Mappingloader-0/INFO]: [ViaBackwards] Loading 1.15 -> 1.14 mappings...
-[08:56:15] [Via-Mappingloader-0/INFO]: [ViaBackwards] Loading 1.16 -> 1.15 mappings...
-[08:56:15] [Via-Mappingloader-3/INFO]: [ViaBackwards] Loading 1.16.2 -> 1.16 mappings...
-[08:56:15] [Via-Mappingloader-5/INFO]: [ViaBackwards] Loading 1.17 -> 1.16.2 mappings...
-[08:56:15] [Via-Mappingloader-3/INFO]: [ViaBackwards] Loading 1.18 -> 1.17 mappings...
-[08:56:15] [Via-Mappingloader-1/INFO]: [ViaBackwards] Loading 1.19 -> 1.18 mappings...
-[08:56:15] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.7-SNAPSHOT;3662-a8d04c2
-[08:56:15] [Server thread/INFO]: [LeakParkour] Loading LeakParkour v3.0.7
-[08:56:15] [Server thread/INFO]: [CrispyAntiCrash] Loading CrispyAntiCrash v1.2
-[08:56:15] [Server thread/INFO]: [ChatExpressions] Loading ChatExpressions v5.0
-[08:56:15] [Server thread/INFO]: [DecentHolograms] Loading DecentHolograms v2.0.6
-[08:56:15] [Server thread/INFO]: [Essentials] Loading Essentials vTeamCity
-[08:56:15] [Server thread/INFO]: [ServerSelectorX] Loading ServerSelectorX v3.6.0-legacy
-[08:56:15] [Server thread/INFO]: [CleanChat] Loading CleanChat v1.1
-[08:56:15] [Server thread/INFO]: [PlayerVisibilityReborn] Loading PlayerVisibilityReborn v1.0.0-RELEASE
-[08:56:15] [Server thread/INFO]: [BedWarsFireballFix] Loading BedWarsFireballFix v0.2
-[08:56:15] [Server thread/INFO]: [VoidSpawn] Loading VoidSpawn v1.17.0
-[08:56:15] [Server thread/INFO]: [MVdWPlaceholderAPI] Loading MVdWPlaceholderAPI v3.1.1
-[08:56:15] [Server thread/INFO]: [ImgPlacer] Loading ImgPlacer v1.4.2
-[08:56:15] [Server thread/INFO]: [AdvanceTab] Loading AdvanceTab v1.4.0
-[08:56:15] [Server thread/INFO]: [BlocksHub] Loading BlocksHub v3.1.1
-[08:56:15] [Server thread/INFO]: [InteractiveBooks] Loading InteractiveBooks v1.3.4
-[08:56:15] [Server thread/INFO]: [PermissionsEx] Loading PermissionsEx v1.23.4
-[08:56:15] [Server thread/WARN]: [PermissionsEx] This server is in offline mode. Unless this server is configured to integrate with a supported proxy (see http://dft.ba/-8ous), UUIDs *may not be stable*!
-[08:56:15] [Server thread/INFO]: [CustomHelp] Loading CustomHelp v1.1
-[08:56:15] [Server thread/INFO]: [Vault] Loading Vault v1.6.1
-[08:56:15] [Server thread/INFO]: [CrispyJoinMessages] Loading CrispyJoinMessages v1.0
-[08:56:15] [Server thread/INFO]: [JPanel] Loading JPanel v1.0-SNAPSHOT
-[08:56:15] [Server thread/INFO]: [TrHologram] Loading TrHologram v1.11
-[08:56:15] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v6.1.3-SNAPSHOT;c904242
-[08:56:15] [Server thread/INFO]: [BungeePortals] Loading BungeePortals v1.2
-[08:56:15] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v14.2.3
-[08:56:15] [Server thread/INFO]: [RankCommand] Loading RankCommand v1.4
-[08:56:15] [Server thread/INFO]: [ChestCommands] Loading ChestCommands v3.5.6
-[08:56:15] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser-Spigot v1.2.1-SNAPSHOT
-[08:56:15] [Server thread/INFO]: [GadgetsMenu] Loading GadgetsMenu v4.5.27
-[08:56:15] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.25-SNAPSHOT (build 1770)
-[08:56:15] [Server thread/INFO]: [BedWars1058] Loading BedWars1058 v22.2
-[08:56:16] [Server thread/INFO]: [BedWars1058] Loading support for paper/spigot: v1_8_R3
-[08:56:18] [Server thread/INFO]: [BedWars1058-FireballEffect] Loading BedWars1058-FireballEffect v1.0
-[08:56:18] [Server thread/INFO]: [BedWars1058-PopUpTowers] Loading BedWars1058-PopUpTowers v0.4
-[08:56:18] [Server thread/INFO]: [BedWars1058-GenSplit] Loading BedWars1058-GenSplit v0.2
-[08:56:18] [Server thread/INFO]: [BedWars1058-AntiDrop] Loading BedWars1058-AntiDrop v1.1
-[08:56:18] [Server thread/INFO]: [BedWars1058-BedCoins] Loading BedWars1058-BedCoins v0.1beta
-[08:56:18] [Server thread/INFO]: [UltraDeliveryMan] Loading UltraDeliveryMan v1.8.0
-[08:56:18] [Server thread/INFO]: [BedWars1058-KillSound] Loading BedWars1058-KillSound v1.0
-[08:56:18] [Server thread/INFO]: [BedWars1058-LevelSystem] Loading BedWars1058-LevelSystem v0.2beta
-[08:56:18] [Server thread/INFO]: [BedWars1058-WinStreak] Loading BedWars1058-WinStreak v0.1beta
-[08:56:18] [Server thread/INFO]: [LeaderHeadsRevamped] Loading LeaderHeadsRevamped v4.0.6
-[08:56:18] [Server thread/INFO]: [BedWars1058-Compass] Loading BedWars1058-Compass v1.3.1
-[08:56:18] [Server thread/INFO]: [BedWars1058-PrivateGames] Loading BedWars1058-PrivateGames v1.1.0
-[08:56:18] [Server thread/INFO]: [BedWars1058-FireballDamageFix] Loading BedWars1058-FireballDamageFix v1.0
-[08:56:18] [Server thread/INFO]: [CommandNPC] Loading CommandNPC v1.9.1
-[08:56:18] [Server thread/INFO]: [BedWars1058-BedBreakEffect] Loading BedWars1058-BedBreakEffect v1.0
-[08:56:18] [Server thread/INFO]: [BedWars1058-HealPool] Loading BedWars1058-HealPool v1.2
-[08:56:18] [Server thread/INFO]: [BedWars1058-TeamSelector] Loading BedWars1058-TeamSelector v0.5.2
-[08:56:18] [Server thread/INFO]: [Denizen] Loading Denizen v1.0.3-SNAPSHOT (build 1670-REL)
-[08:56:18] [Server thread/INFO]: [BedWars1058-Sponge] Loading BedWars1058-Sponge v1.0-SNAPSHOT
-[08:56:18] [Server thread/INFO]: [BedWars1058-LobbyEffect] Loading BedWars1058-LobbyEffect v1.1
-[08:56:18] [Server thread/INFO]: [BedWars1058-Map] Loading BedWars1058-Map v0.6
-[08:56:18] [Server thread/INFO]: [Vault] Enabling Vault v1.6.1
-[08:56:18] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
-[08:56:18] [Server thread/INFO]: [Vault] [Permission] PermissionsEx found: Waiting
-[08:56:18] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
-[08:56:18] [Server thread/INFO]: [Vault] [Chat] PermissionsEx found: Waiting
-[08:56:18] [Server thread/INFO]: [Vault] Plugin enabled (171ms)
-[08:56:18] [Server thread/INFO]: [JPanel] Enabling JPanel v1.0-SNAPSHOT
-[08:56:21] [Server thread/WARN]: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+[08:41:09] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:513)
 
-[08:56:21] [Server thread/WARN]: SLF4J: Defaulting to no-operation (NOP) logger implementation
+[08:41:09] [Server thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:64)
 
-[08:56:21] [Server thread/WARN]: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[08:41:09] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:131)
 
-[08:56:22] [Server thread/INFO]: [JPanel] JPanel enabled!
+[08:41:09] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:329)
 
-[08:56:22] [Server thread/INFO]: [BedWars1058] Enabling BedWars1058 v22.2
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called coastal
-[08:56:22] [Thread-8/INFO]: [JPanel] WebSocket started
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called speedway_pvp
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called gateway
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called lighthouse
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called apollo_pvp
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called rise_
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called lotus
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called entangle
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called lectus
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called invasion
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called orchestra_pvp
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called jurassic
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called hollow
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called ashore_
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called coastal_
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called stonekeep_
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called glacier_
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called orchestra
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called bio-hazard
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called chained_
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called horizon
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called dreamgrove
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called temple
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called aquarium_
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called eastwood
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called inca_
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called swashbuckle
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called varyth
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called unturned_
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called zarzul
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called stonekeep
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called pernicious_
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called glacier
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called lotus_
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called airshow
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called dreamgrove_
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called gateway_
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called treenan_
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called misdalr
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called playground_pvp
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called obelisk_
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called pernicious_pvp
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called amazon
-[08:56:22] [Server thread/WARN]: [BedWars1058] There isn't any map called rise
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called crypt
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called dragonstar_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called airshow_pvp
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called boletum_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called pharaoh_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called cascade_pvp
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called chained
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called ashfire
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called ashore
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called treenan
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called swashbuckle_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called lions_temple
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called graveship_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called cascade
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called ashfire_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called zarzul_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called waterfall_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called cryptic
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called enchanted
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called temple_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called aquarium
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called archway_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called apollo_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called crypt_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called waterfall
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called rooftop_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called lectus_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called graveship
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called steampunk
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called amazon_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called horizon_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called playground
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called unturned
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called jurassic_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called inca
-[08:56:23] [Server thread/ERROR]: [BedWars1058] You didn't set any team for arena: toro_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called lighthouse_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called ruins
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called obelisk
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called rooftop
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called invasion_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called archway
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called pernicious
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called speedway_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called speedway
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called bio-hazard_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called apollo
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called eastwood_
-[08:56:23] [Server thread/WARN]: [BedWars1058] There isn't any map called solace_
-[08:56:24] [Server thread/WARN]: [BedWars1058] There isn't any map called pharaoh
-[08:56:24] [Server thread/WARN]: [BedWars1058] There isn't any map called gardens
-[08:56:24] [Server thread/WARN]: [BedWars1058] There isn't any map called lighthouse_pvp
-[08:56:24] [Server thread/WARN]: [BedWars1058] There isn't any map called airshow_
-[08:56:24] [Server thread/WARN]: [BedWars1058] There isn't any map called cascade_
-[08:56:24] [Server thread/WARN]: [BedWars1058] There isn't any map called enchanted_
-[08:56:24] [Server thread/ERROR]: [BedWars1058] You didn't set any team for arena: toro
-[08:56:24] [Server thread/WARN]: [BedWars1058] There isn't any map called orchestra_
-[08:56:24] [Server thread/WARN]: [BedWars1058] There isn't any map called boletum
-[08:56:24] [Server thread/WARN]: [BedWars1058] There isn't any map called hollow_
-[08:56:24] [Server thread/WARN]: [BedWars1058] There isn't any map called inca_pvp
-[08:56:24] [Server thread/WARN]: [BedWars1058] There isn't any map called frost
-[08:56:24] [Server thread/WARN]: [BedWars1058] There isn't any map called polemus
-[08:56:24] [Server thread/WARN]: [BedWars1058] There isn't any map called steampunk_
-[08:56:24] [Server thread/WARN]: [BedWars1058] There isn't any map called dragonstar
-[08:56:24] [Server thread/WARN]: [BedWars1058] There isn't any map called solace
-[08:56:24] [Server thread/WARN]: [BedWars1058] There isn't any map called picnic
-[08:56:24] [Server thread/WARN]: [BedWars1058] There isn't any map called playground_
-[08:56:24] [Server thread/INFO]: [BedWars1058] Hook into PlaceholderAPI support!
-[08:56:24] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: bw1058
-[08:56:25] [Server thread/WARN]: [BedWars1058] Invalid generator configuration iron at upgrades2: upgrade-forge.tier-1
-[08:56:25] [Server thread/WARN]: [BedWars1058] Invalid generator configuration iron at upgrades2: upgrade-forge.tier-2
-[08:56:25] [Server thread/INFO]: [BedWars1058-Sponge] Enabling BedWars1058-Sponge v1.0-SNAPSHOT
-[08:56:25] [Server thread/INFO]: [BedWars1058-Sponge] Successfully loaded in 15ms
-[08:56:25] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[08:56:25] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[08:56:25] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[08:56:25] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[08:56:25] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
-[08:56:25] [Server thread/INFO]: Preparing level "world"
-[08:56:25] [Server thread/INFO]: -------- World Settings For [world] --------
-[08:56:25] [Server thread/INFO]: Anti X-Ray: true
-[08:56:25] [Server thread/INFO]: 	Engine Mode: 1
-[08:56:25] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
-[08:56:25] [Server thread/INFO]: 	Replace Blocks: [1, 5]
-[08:56:25] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[08:56:25] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[08:56:25] [Server thread/INFO]: Cane Growth Modifier: 100%
-[08:56:25] [Server thread/INFO]: Melon Growth Modifier: 100%
-[08:56:25] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[08:56:25] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[08:56:25] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[08:56:25] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[08:56:25] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[08:56:25] [Server thread/INFO]: Mob Spawn Range: 4
-[08:56:25] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
-[08:56:25] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[08:56:25] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
-[08:56:25] [Server thread/INFO]: Random Lighting Updates: false
-[08:56:25] [Server thread/INFO]: Structure Info Saving: true
-[08:56:25] [Server thread/INFO]: Sending up to 10 chunks per packet
-[08:56:25] [Server thread/INFO]: Max Entity Collisions: 8
-[08:56:25] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
-[08:56:25] [Server thread/INFO]: Max TNT Explosions: 100
-[08:56:25] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[08:56:25] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[08:56:25] [Server thread/INFO]: Item Despawn Rate: 6000
-[08:56:25] [Server thread/INFO]: Item Merge Radius: 2.5
-[08:56:25] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[08:56:25] [Server thread/INFO]: View Distance: 10
-[08:56:25] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[08:56:25] [Server thread/INFO]: Chunks to Grow per Tick: 650
-[08:56:25] [Server thread/INFO]: Clear tick list: false
-[08:56:25] [Server thread/INFO]: Experience Merge Radius: 3.0
-[08:56:25] [Server thread/INFO]: Preparing start region for level 0 (Seed: 0)
-[08:56:26] [Server thread/INFO]: Preparing spawn area: 74%
-[08:56:26] [Server thread/INFO]: [BlockParticles] Enabling BlockParticles v1.9.7.2
-[08:56:26] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.10.9
-[08:56:26] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
-[08:56:26] [Server thread/INFO]: [PrivateMessage] Enabling PrivateMessage v1.3
-[08:56:26] [Server thread/INFO]: [BackToLobby] Enabling BackToLobby v1.1
-[08:56:26] [Server thread/INFO]: [BackToLobby] Plugin wurde erfolgreich aktiviert! :)
-[08:56:26] [Server thread/INFO]: [Images] Enabling Images v2.1.7
-[08:56:26] [Server thread/INFO]: [MOTD] Enabling MOTD v2.3.2
-[08:56:26] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v4.4.2
-[08:56:26] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v4.4.2
-[08:56:26] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.7-SNAPSHOT;3662-a8d04c2
-[08:56:27] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[08:56:27] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_8_R3 as the Bukkit adapter
-[08:56:27] [Server thread/WARN]: [WorldEdit] WorldEdit has detected you are using Java 7 (based on detected version 21.0.4).
-[08:56:27] [Server thread/WARN]: [WorldEdit] WorldEdit will stop supporting Java less than version 8 in the future, due to Java 7 being EOL since April 2015. Please update your server to Java 8.
-[08:56:27] [Server thread/INFO]: [LeakParkour] Enabling LeakParkour v3.0.7
-[08:56:27] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: leakparkour
-[08:56:28] [Server thread/INFO]: [0;32;1m [m[m
+[08:41:09] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:251)
 
-[08:56:28] [Server thread/INFO]: [0;32;1m**************************************************[m[m
+[08:41:09] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugins(CraftServer.java:292)
 
-[08:56:28] [Server thread/INFO]: [0;32;1m----------------- LEAK PARKOUR ------------------[m[m
+[08:41:09] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:198)
 
-[08:56:28] [Server thread/INFO]: [0;32;1m [m[m
+[08:41:09] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:525)
 
-[08:56:28] [Server thread/INFO]: [0;31;1mLicense:[m[m
+[08:41:09] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-[08:56:28] [Server thread/INFO]: [0;31;1m   - Do not modify plugin![m[m
+[08:41:09] [Server thread/WARN]: java.lang.NoSuchFieldException: ucp
 
-[08:56:28] [Server thread/INFO]: [0;31;1m   - Do not share/upload anywhere![m[m
+[08:41:09] [Server thread/WARN]: 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
 
-[08:56:28] [Server thread/INFO]: [0;31;1m   - Do not use for commercial purposes![m[m
+[08:41:09] [Server thread/WARN]: 	at me.arasple.mc.trhologram.Plugin$Loader.addPath(Plugin.java:672)
 
-[08:56:28] [Server thread/INFO]: [0;32;1m [m[m
+[08:41:09] [Server thread/WARN]: 	at me.arasple.mc.trhologram.Plugin.init(Plugin.java:396)
 
-[08:56:28] [Server thread/INFO]: [0;33;1mIf you want download new version just copy this:[m[m
+[08:41:09] [Server thread/WARN]: 	at me.arasple.mc.trhologram.Plugin.<clinit>(Plugin.java:148)
 
-[08:56:28] [Server thread/INFO]: [0;33;1m> http://bit.ly/2w7Qilh[m[m
+[08:41:09] [Server thread/WARN]: 	at java.base/java.lang.Class.forName0(Native Method)
 
-[08:56:28] [Server thread/INFO]: [0;32;1m [m[m
+[08:41:09] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:534)
 
-[08:56:28] [Server thread/INFO]: [0;32;1m---------------- PROBLEM DETECTOR ---------------[m[m
+[08:41:09] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:513)
 
-[08:56:28] [Server thread/INFO]: [0;32;1m [m[m
+[08:41:09] [Server thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:64)
 
-[08:56:28] [Server thread/INFO]: [0;32;1m >  No problems found. :)[m[m
+[08:41:09] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:131)
 
-[08:56:28] [Server thread/INFO]: [0;32;1m [m[m
+[08:41:09] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:329)
 
-[08:56:28] [Server thread/INFO]: [0;32;1m**************************************************[m[m
+[08:41:09] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:251)
 
-[08:56:28] [Server thread/INFO]: [0;32;1m [m[m
+[08:41:09] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugins(CraftServer.java:292)
 
-[08:56:28] [Server thread/INFO]: [CrispyAntiCrash] Enabling CrispyAntiCrash v1.2
-[08:56:28] [Server thread/INFO]: [ChatExpressions] Enabling ChatExpressions v5.0
-[08:56:28] [Server thread/INFO]: [DecentHolograms] Enabling DecentHolograms v2.0.6
-[08:56:28] [Server thread/INFO]: [Essentials] Enabling Essentials vTeamCity
-[08:56:28] [Server thread/INFO]: Bukkit version format changed. Version not checked.
-[08:56:28] [Server thread/INFO]: git-Spigot-21fe707-e1ebe52 (MC: 1.8.8)
-[08:56:28] [Server thread/INFO]: 1.8.8-R0.1-SNAPSHOT
-[08:56:28] [Server thread/INFO]: Using locale en
-[08:56:28] [Server thread/INFO]: Using locale en
-[08:56:28] [Server thread/INFO]: [Vault][Economy] Essentials Economy hooked.
-[08:56:28] [Server thread/INFO]: Essentials: Using config file enhanced permissions.
-[08:56:28] [Server thread/INFO]: Permissions listed in as player-commands will be given to all users.
-[08:56:28] [Server thread/INFO]: [ServerSelectorX] Enabling ServerSelectorX v3.6.0-legacy
-[08:56:28] [Server thread/ERROR]: [ServerSelectorX] Plugin ServerSelectorX v3.6.0-legacy has failed to register events for class xyz.derkades.serverselectorx.ItemMoveDropCancelListener because org/bukkit/event/player/PlayerSwapHandItemsEvent does not exist.
-[08:56:28] [Server thread/INFO]: [ServerSelectorX] Thank you for using ServerSelectorX. If you enjoy using this plugin, please consider buying the premium version. It has more features and placeholders update instantly. https://github.com/ServerSelectorX/ServerSelectorX/wiki/Premium
-[08:56:28] [Server thread/INFO]: [CleanChat] Enabling CleanChat v1.1
-[08:56:28] [Server thread/INFO]: [0;36;1m+----------+[m
+[08:41:09] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:198)
 
-[08:56:28] [Server thread/INFO]: [0;36;1m|          |[m
+[08:41:09] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:525)
 
-[08:56:28] [Server thread/INFO]: [0;36;1m|          |[m
+[08:41:09] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-[08:56:28] [Server thread/INFO]: [0;36;1m|[0;36;22mClean Chat[0;36;1m|[m
+[08:41:09] [Server thread/INFO]: [0;31;22m[TabooLib] [0;31;1m主运行库未完成初始化, 插件停止加载.[m
 
-[08:56:28] [Server thread/INFO]: [0;36;1m|[0;36;22m   v1.1[0;36;1m   |[m
+[08:41:10] [Server thread/INFO]: [BlockParticles] Loading BlockParticles v1.9.7.2
+[08:41:10] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.10.9
+[08:41:10] [Server thread/INFO]: [PrivateMessage] Loading PrivateMessage v1.3
+[08:41:10] [Server thread/INFO]: [BackToLobby] Loading BackToLobby v1.1
+[08:41:10] [Server thread/INFO]: [Images] Loading Images v2.1.7
+[08:41:10] [Server thread/INFO]: [MOTD] Loading MOTD v2.3.2
+[08:41:10] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v4.4.2
+[08:41:10] [Server thread/INFO]: [ViaVersion] ViaVersion 4.4.2 is now loaded, injecting!
+[08:41:10] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.12 -> 1.13 mappings...
+[08:41:10] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.13 -> 1.13.2 mappings...
+[08:41:10] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.13.2 -> 1.14 mappings...
+[08:41:10] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.14 -> 1.15 mappings...
+[08:41:10] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.15 -> 1.16 mappings...
+[08:41:10] [Via-Mappingloader-5/INFO]: [ViaVersion] Loading 1.16 -> 1.16.2 mappings...
+[08:41:10] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.16.2 -> 1.17 mappings...
+[08:41:10] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.17 -> 1.18 mappings...
+[08:41:11] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.18 -> 1.19 mappings...
+[08:41:11] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v4.4.2
+[08:41:11] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[08:41:11] [Via-Mappingloader-5/INFO]: [ViaBackwards] Loading 1.10 -> 1.9.4 mappings...
+[08:41:11] [Via-Mappingloader-5/INFO]: [ViaBackwards] Loading 1.11 -> 1.10 mappings...
+[08:41:11] [Via-Mappingloader-5/INFO]: [ViaBackwards] Loading 1.12 -> 1.11 mappings...
+[08:41:11] [Via-Mappingloader-5/INFO]: [ViaBackwards] Loading 1.13 -> 1.12 mappings...
+[08:41:11] [Via-Mappingloader-2/INFO]: [ViaBackwards] Loading 1.13.2 -> 1.13 mappings...
+[08:41:11] [Via-Mappingloader-2/INFO]: [ViaBackwards] Loading 1.14 -> 1.13.2 mappings...
+[08:41:11] [Via-Mappingloader-3/INFO]: [ViaBackwards] Loading 1.15 -> 1.14 mappings...
+[08:41:11] [Via-Mappingloader-5/INFO]: [ViaBackwards] Loading 1.16 -> 1.15 mappings...
+[08:41:11] [Via-Mappingloader-2/INFO]: [ViaBackwards] Loading 1.16.2 -> 1.16 mappings...
+[08:41:11] [Via-Mappingloader-2/INFO]: [ViaBackwards] Loading 1.17 -> 1.16.2 mappings...
+[08:41:11] [Via-Mappingloader-5/INFO]: [ViaBackwards] Loading 1.18 -> 1.17 mappings...
+[08:41:11] [Via-Mappingloader-5/INFO]: [ViaBackwards] Loading 1.19 -> 1.18 mappings...
+[08:41:12] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.7-SNAPSHOT;3662-a8d04c2
+[08:41:12] [Server thread/INFO]: [LeakParkour] Loading LeakParkour v3.0.7
+[08:41:12] [Server thread/INFO]: [CrispyAntiCrash] Loading CrispyAntiCrash v1.2
+[08:41:12] [Server thread/INFO]: [ChatExpressions] Loading ChatExpressions v5.0
+[08:41:12] [Server thread/INFO]: [DecentHolograms] Loading DecentHolograms v2.0.6
+[08:41:12] [Server thread/INFO]: [Essentials] Loading Essentials vTeamCity
+[08:41:12] [Server thread/INFO]: [ServerSelectorX] Loading ServerSelectorX v3.6.0-legacy
+[08:41:12] [Server thread/INFO]: [CleanChat] Loading CleanChat v1.1
+[08:41:12] [Server thread/INFO]: [PlayerVisibilityReborn] Loading PlayerVisibilityReborn v1.0.0-RELEASE
+[08:41:12] [Server thread/INFO]: [BedWarsFireballFix] Loading BedWarsFireballFix v0.2
+[08:41:12] [Server thread/INFO]: [VoidSpawn] Loading VoidSpawn v1.17.0
+[08:41:12] [Server thread/INFO]: [MVdWPlaceholderAPI] Loading MVdWPlaceholderAPI v3.1.1
+[08:41:12] [Server thread/INFO]: [ImgPlacer] Loading ImgPlacer v1.4.2
+[08:41:12] [Server thread/INFO]: [AdvanceTab] Loading AdvanceTab v1.4.0
+[08:41:12] [Server thread/INFO]: [BlocksHub] Loading BlocksHub v3.1.1
+[08:41:12] [Server thread/INFO]: [InteractiveBooks] Loading InteractiveBooks v1.3.4
+[08:41:12] [Server thread/INFO]: [PermissionsEx] Loading PermissionsEx v1.23.4
+[08:41:12] [Server thread/WARN]: [PermissionsEx] This server is in offline mode. Unless this server is configured to integrate with a supported proxy (see http://dft.ba/-8ous), UUIDs *may not be stable*!
+[08:41:12] [Server thread/INFO]: [CustomHelp] Loading CustomHelp v1.1
+[08:41:12] [Server thread/INFO]: [Vault] Loading Vault v1.6.1
+[08:41:12] [Server thread/INFO]: [CrispyJoinMessages] Loading CrispyJoinMessages v1.0
+[08:41:12] [Server thread/INFO]: [JPanel] Loading JPanel v1.0-SNAPSHOT
+[08:41:12] [Server thread/INFO]: [TrHologram] Loading TrHologram v1.11
+[08:41:12] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v6.1.3-SNAPSHOT;c904242
+[08:41:12] [Server thread/INFO]: [BungeePortals] Loading BungeePortals v1.2
+[08:41:12] [Server thread/INFO]: [RankCommand] Loading RankCommand v1.4
+[08:41:12] [Server thread/INFO]: [ChestCommands] Loading ChestCommands v3.5.6
+[08:41:12] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser-Spigot v1.2.1-SNAPSHOT
+[08:41:12] [Server thread/INFO]: [GadgetsMenu] Loading GadgetsMenu v4.5.27
+[08:41:12] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.25-SNAPSHOT (build 1770)
+[08:41:12] [Server thread/INFO]: [BedWars1058] Loading BedWars1058 v22.2
+[08:41:12] [Server thread/INFO]: [BedWars1058] Loading support for paper/spigot: v1_8_R3
+[08:41:13] [Server thread/INFO]: [BedWars1058-FireballEffect] Loading BedWars1058-FireballEffect v1.0
+[08:41:13] [Server thread/INFO]: [BedWars1058-PopUpTowers] Loading BedWars1058-PopUpTowers v0.4
+[08:41:13] [Server thread/INFO]: [BedWars1058-GenSplit] Loading BedWars1058-GenSplit v0.2
+[08:41:13] [Server thread/INFO]: [BedWars1058-AntiDrop] Loading BedWars1058-AntiDrop v1.1
+[08:41:13] [Server thread/INFO]: [BedWars1058-BedCoins] Loading BedWars1058-BedCoins v0.1beta
+[08:41:13] [Server thread/INFO]: [UltraDeliveryMan] Loading UltraDeliveryMan v1.8.0
+[08:41:13] [Server thread/INFO]: [BedWars1058-KillSound] Loading BedWars1058-KillSound v1.0
+[08:41:13] [Server thread/INFO]: [BedWars1058-LevelSystem] Loading BedWars1058-LevelSystem v0.2beta
+[08:41:13] [Server thread/INFO]: [BedWars1058-WinStreak] Loading BedWars1058-WinStreak v0.1beta
+[08:41:13] [Server thread/INFO]: [LeaderHeadsRevamped] Loading LeaderHeadsRevamped v4.0.6
+[08:41:13] [Server thread/INFO]: [BedWars1058-Compass] Loading BedWars1058-Compass v1.3.1
+[08:41:13] [Server thread/INFO]: [BedWars1058-PrivateGames] Loading BedWars1058-PrivateGames v1.1.0
+[08:41:13] [Server thread/INFO]: [BedWars1058-FireballDamageFix] Loading BedWars1058-FireballDamageFix v1.0
+[08:41:13] [Server thread/INFO]: [CommandNPC] Loading CommandNPC v1.9.1
+[08:41:13] [Server thread/INFO]: [BedWars1058-BedBreakEffect] Loading BedWars1058-BedBreakEffect v1.0
+[08:41:13] [Server thread/INFO]: [BedWars1058-HealPool] Loading BedWars1058-HealPool v1.2
+[08:41:13] [Server thread/INFO]: [BedWars1058-TeamSelector] Loading BedWars1058-TeamSelector v0.5.2
+[08:41:13] [Server thread/INFO]: [Denizen] Loading Denizen v1.0.3-SNAPSHOT (build 1670-REL)
+[08:41:13] [Server thread/INFO]: [BedWars1058-Sponge] Loading BedWars1058-Sponge v1.0-SNAPSHOT
+[08:41:13] [Server thread/INFO]: [BedWars1058-LobbyEffect] Loading BedWars1058-LobbyEffect v1.1
+[08:41:13] [Server thread/INFO]: [BedWars1058-Map] Loading BedWars1058-Map v0.6
+[08:41:13] [Server thread/INFO]: [Vault] Enabling Vault v1.6.1
+[08:41:13] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[08:41:13] [Server thread/INFO]: [Vault] [Permission] PermissionsEx found: Waiting
+[08:41:13] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[08:41:13] [Server thread/INFO]: [Vault] [Chat] PermissionsEx found: Waiting
+[08:41:13] [Server thread/INFO]: [Vault] Plugin enabled (76ms)
+[08:41:13] [Server thread/INFO]: [JPanel] Enabling JPanel v1.0-SNAPSHOT
+[08:41:14] [Server thread/WARN]: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 
-[08:56:28] [Server thread/INFO]: [0;36;1m|[0;36;22m Enabled![0;36;1m |[m
+[08:41:14] [Server thread/WARN]: SLF4J: Defaulting to no-operation (NOP) logger implementation
 
-[08:56:28] [Server thread/INFO]: [0;36;1m|          |[m
+[08:41:14] [Server thread/WARN]: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 
-[08:56:28] [Server thread/INFO]: [0;36;1m|          |[m
+[08:41:14] [Server thread/INFO]: [JPanel] JPanel enabled!
 
-[08:56:28] [Server thread/INFO]: [0;36;1m+----------+[m
+[08:41:14] [Server thread/INFO]: [BedWars1058] Enabling BedWars1058 v22.2
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called coastal
+[08:41:15] [Thread-8/INFO]: [JPanel] WebSocket started
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called speedway_pvp
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called gateway
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called lighthouse
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called apollo_pvp
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called rise_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called lotus
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called entangle
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called lectus
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called invasion
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called orchestra_pvp
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called jurassic
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called hollow
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called ashore_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called coastal_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called stonekeep_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called glacier_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called orchestra
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called bio-hazard
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called chained_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called horizon
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called dreamgrove
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called temple
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called aquarium_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called eastwood
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called inca_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called swashbuckle
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called varyth
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called unturned_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called zarzul
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called stonekeep
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called pernicious_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called glacier
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called lotus_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called airshow
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called dreamgrove_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called gateway_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called treenan_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called misdalr
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called playground_pvp
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called obelisk_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called pernicious_pvp
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called amazon
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called rise
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called crypt
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called dragonstar_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called airshow_pvp
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called boletum_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called pharaoh_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called cascade_pvp
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called chained
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called ashfire
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called ashore
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called treenan
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called swashbuckle_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called lions_temple
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called graveship_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called cascade
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called ashfire_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called zarzul_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called waterfall_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called cryptic
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called enchanted
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called temple_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called aquarium
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called archway_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called apollo_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called crypt_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called waterfall
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called rooftop_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called lectus_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called graveship
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called steampunk
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called amazon_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called horizon_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called playground
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called unturned
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called jurassic_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called inca
+[08:41:15] [Server thread/ERROR]: [BedWars1058] You didn't set any team for arena: toro_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called lighthouse_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called ruins
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called obelisk
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called rooftop
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called invasion_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called archway
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called pernicious
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called speedway_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called speedway
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called bio-hazard_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called apollo
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called eastwood_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called solace_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called pharaoh
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called gardens
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called lighthouse_pvp
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called airshow_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called cascade_
+[08:41:15] [Server thread/WARN]: [BedWars1058] There isn't any map called enchanted_
+[08:41:15] [Server thread/ERROR]: [BedWars1058] You didn't set any team for arena: toro
+[08:41:16] [Server thread/WARN]: [BedWars1058] There isn't any map called orchestra_
+[08:41:16] [Server thread/WARN]: [BedWars1058] There isn't any map called boletum
+[08:41:16] [Server thread/WARN]: [BedWars1058] There isn't any map called hollow_
+[08:41:16] [Server thread/WARN]: [BedWars1058] There isn't any map called inca_pvp
+[08:41:16] [Server thread/WARN]: [BedWars1058] There isn't any map called frost
+[08:41:16] [Server thread/WARN]: [BedWars1058] There isn't any map called polemus
+[08:41:16] [Server thread/WARN]: [BedWars1058] There isn't any map called steampunk_
+[08:41:16] [Server thread/WARN]: [BedWars1058] There isn't any map called dragonstar
+[08:41:16] [Server thread/WARN]: [BedWars1058] There isn't any map called solace
+[08:41:16] [Server thread/WARN]: [BedWars1058] There isn't any map called picnic
+[08:41:16] [Server thread/WARN]: [BedWars1058] There isn't any map called playground_
+[08:41:16] [Server thread/INFO]: [BedWars1058] Hook into PlaceholderAPI support!
+[08:41:16] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: bw1058
+[08:41:16] [Server thread/WARN]: [BedWars1058] Invalid generator configuration iron at upgrades2: upgrade-forge.tier-1
+[08:41:16] [Server thread/WARN]: [BedWars1058] Invalid generator configuration iron at upgrades2: upgrade-forge.tier-2
+[08:41:16] [Server thread/INFO]: [BedWars1058-Sponge] Enabling BedWars1058-Sponge v1.0-SNAPSHOT
+[08:41:16] [Server thread/INFO]: [BedWars1058-Sponge] Successfully loaded in 6ms
+[08:41:16] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[08:41:16] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[08:41:16] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[08:41:16] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[08:41:16] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[08:41:16] [Server thread/INFO]: Preparing level "world"
+[08:41:16] [Server thread/INFO]: -------- World Settings For [world] --------
+[08:41:16] [Server thread/INFO]: Anti X-Ray: true
+[08:41:16] [Server thread/INFO]: 	Engine Mode: 1
+[08:41:16] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[08:41:16] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[08:41:16] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[08:41:16] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[08:41:16] [Server thread/INFO]: Cane Growth Modifier: 100%
+[08:41:16] [Server thread/INFO]: Melon Growth Modifier: 100%
+[08:41:16] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[08:41:16] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[08:41:16] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[08:41:16] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[08:41:16] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[08:41:16] [Server thread/INFO]: Mob Spawn Range: 4
+[08:41:16] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[08:41:16] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[08:41:16] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[08:41:16] [Server thread/INFO]: Random Lighting Updates: false
+[08:41:16] [Server thread/INFO]: Structure Info Saving: true
+[08:41:16] [Server thread/INFO]: Sending up to 10 chunks per packet
+[08:41:16] [Server thread/INFO]: Max Entity Collisions: 8
+[08:41:16] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[08:41:16] [Server thread/INFO]: Max TNT Explosions: 100
+[08:41:16] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[08:41:16] [Server thread/INFO]: Item Despawn Rate: 6000
+[08:41:16] [Server thread/INFO]: Item Merge Radius: 2.5
+[08:41:16] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[08:41:16] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[08:41:16] [Server thread/INFO]: View Distance: 10
+[08:41:16] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[08:41:16] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[08:41:16] [Server thread/INFO]: Clear tick list: false
+[08:41:16] [Server thread/INFO]: Experience Merge Radius: 3.0
+[08:41:16] [Server thread/INFO]: Preparing start region for level 0 (Seed: 0)
+[08:41:17] [Server thread/INFO]: [BlockParticles] Enabling BlockParticles v1.9.7.2
+[08:41:17] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.10.9
+[08:41:17] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[08:41:17] [Server thread/INFO]: [PrivateMessage] Enabling PrivateMessage v1.3
+[08:41:17] [Server thread/INFO]: [BackToLobby] Enabling BackToLobby v1.1
+[08:41:17] [Server thread/INFO]: [BackToLobby] Plugin wurde erfolgreich aktiviert! :)
+[08:41:17] [Server thread/INFO]: [Images] Enabling Images v2.1.7
+[08:41:17] [Server thread/INFO]: [MOTD] Enabling MOTD v2.3.2
+[08:41:17] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v4.4.2
+[08:41:17] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v4.4.2
+[08:41:17] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.7-SNAPSHOT;3662-a8d04c2
+[08:41:17] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[08:41:17] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_8_R3 as the Bukkit adapter
+[08:41:17] [Server thread/WARN]: [WorldEdit] WorldEdit has detected you are using Java 7 (based on detected version 21.0.4).
+[08:41:17] [Server thread/WARN]: [WorldEdit] WorldEdit will stop supporting Java less than version 8 in the future, due to Java 7 being EOL since April 2015. Please update your server to Java 8.
+[08:41:17] [Server thread/INFO]: [LeakParkour] Enabling LeakParkour v3.0.7
+[08:41:17] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: leakparkour
+[08:41:17] [Server thread/INFO]: [0;32;1m [m[m
 
-[08:56:28] [Server thread/INFO]: [PlayerVisibilityReborn] Enabling PlayerVisibilityReborn v1.0.0-RELEASE
-[08:56:28] [Server thread/INFO]: [0;36;1m=-=-=-=-=-=-=-=-=[m
+[08:41:17] [Server thread/INFO]: [0;32;1m**************************************************[m[m
 
-[08:56:28] [Server thread/INFO]: [0;30;1m[[0;33;22mPlayerVisibilityReborn[0;30;1m] [0;32;22mversion [0;31;22m1.0.0-RELEASE [0;32;22mby xDesireRage has been enabled![m
+[08:41:17] [Server thread/INFO]: [0;32;1m----------------- LEAK PARKOUR ------------------[m[m
 
-[08:56:28] [Server thread/INFO]: [0;36;1m=-=-=-=-=-=-=-=-=[m
+[08:41:17] [Server thread/INFO]: [0;32;1m [m[m
 
-[08:56:28] [Server thread/INFO]: [BedWarsFireballFix] Enabling BedWarsFireballFix v0.2
-[08:56:28] [Server thread/INFO]:  [m
+[08:41:17] [Server thread/INFO]: [0;31;1mLicense:[m[m
 
-[08:56:28] [Server thread/INFO]: BedWars1058 Fireball Fix[m
+[08:41:17] [Server thread/INFO]: [0;31;1m   - Do not modify plugin![m[m
 
-[08:56:28] [Server thread/INFO]: by kimoVoid[m
+[08:41:17] [Server thread/INFO]: [0;31;1m   - Do not share/upload anywhere![m[m
 
-[08:56:28] [Server thread/INFO]:  [m
+[08:41:17] [Server thread/INFO]: [0;31;1m   - Do not use for commercial purposes![m[m
 
-[08:56:28] [Server thread/INFO]: [VoidSpawn] Enabling VoidSpawn v1.17.0
-[08:56:28] [Server thread/INFO]: [0;36;22m[[0;35;1mVoidSpawn[0;36;22m] [m[0;33;1mNo SkyBlock plugins found, disabling island mode support.[m
+[08:41:17] [Server thread/INFO]: [0;32;1m [m[m
 
-[08:56:28] [Server thread/INFO]: [0;36;22m[[0;35;1mVoidSpawn[0;36;22m] [m[0;33;1mv1.17.0 by EnderCrest enabled[m
+[08:41:17] [Server thread/INFO]: [0;33;1mIf you want download new version just copy this:[m[m
 
-[08:56:28] [Server thread/INFO]: [MVdWPlaceholderAPI] Enabling MVdWPlaceholderAPI v3.1.1
-[08:56:28] [Server thread/INFO]: [MVdWPlaceholderAPI] Initializing placeholders ...
-[08:56:28] [Server thread/INFO]: [MVdWPlaceholderAPI] Sending metrics ...
-[08:56:28] [Server thread/INFO]: [ImgPlacer] Enabling ImgPlacer v1.4.2
-[08:56:29] [Server thread/INFO]: [AdvanceTab] Enabling AdvanceTab v1.4.0
-[08:56:31] [Server thread/INFO]: +-------------------------+
-[08:56:31] [Server thread/INFO]:  _______  ______  ______  
-[08:56:31] [Server thread/INFO]:  |_   __| |  _  | |  _  | 
-[08:56:31] [Server thread/INFO]:    | |    | |_| | | |_| | 
-[08:56:31] [Server thread/INFO]:    | |    |  _  | |  _ <  
-[08:56:31] [Server thread/INFO]:    | |    | | | | | |_| | 
-[08:56:31] [Server thread/INFO]:    |_|    |_| |_| |_____| 
-[08:56:31] [Server thread/INFO]: +-------------------------+
-[08:56:31] [Server thread/INFO]:        Advanced Tab        
-[08:56:31] [Server thread/INFO]:    Developed By: _Joosh    
-[08:56:31] [Server thread/INFO]:    Current Version: 1.4.0
-[08:56:31] [Server thread/INFO]: +-------------------------+
-[08:56:31] [Server thread/INFO]: Placeholder API has been found and will be used.
-[08:56:31] [Server thread/INFO]: [BlocksHub] Enabling BlocksHub v3.1.1
-[08:56:31] [Server thread/INFO]: Unable to get the command map: unsupported version, field commandMap not found.
+[08:41:17] [Server thread/INFO]: [0;33;1m> http://bit.ly/2w7Qilh[m[m
 
-[08:56:31] [Server thread/INFO]: Initializing access controllers[m
+[08:41:17] [Server thread/INFO]: [0;32;1m [m[m
 
-[08:56:31] [Server thread/INFO]: Initializing block loggers[m
+[08:41:17] [Server thread/INFO]: [0;32;1m---------------- PROBLEM DETECTOR ---------------[m[m
 
-[08:56:31] [Server thread/INFO]: [BlocksHub] Enabled
-[08:56:31] [Server thread/INFO]: [InteractiveBooks] Enabling InteractiveBooks v1.3.4
-[08:56:31] [Server thread/INFO]: [PermissionsEx] Enabling PermissionsEx v1.23.4
-[08:56:31] [Server thread/INFO]: [PermissionsEx] Initializing file backend
-[08:56:31] [Server thread/INFO]: [PermissionsEx] Permissions file successfully reloaded
-[08:56:31] [Server thread/INFO]: WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
-[08:56:31] [Server thread/INFO]: [Vault][Permission] PermissionsEx hooked.
-[08:56:31] [Server thread/INFO]: [Vault][Chat] PermissionsEx_Chat hooked.
-[08:56:31] [Server thread/INFO]: Essentials: Using PermissionsEx based permissions.
-[08:56:31] [Server thread/INFO]: [CustomHelp] Enabling CustomHelp v1.1
-[08:56:31] [Server thread/INFO]: [CustomHelp] CustomHelp has been enabled!
-[08:56:31] [Server thread/INFO]: [CrispyJoinMessages] Enabling CrispyJoinMessages v1.0
-[08:56:31] [Server thread/INFO]: [0;30;1m[[0;33;1mCrispyJoinMessages[0;30;1m] [0;37;22mPlugin enabled![m
+[08:41:17] [Server thread/INFO]: [0;32;1m [m[m
 
-[08:56:31] [Server thread/INFO]: [TrHologram] Enabling TrHologram v1.11
-[08:56:31] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v6.1.3-SNAPSHOT;c904242
-[08:56:31] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
-[08:56:31] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
-[08:56:31] [Server thread/INFO]: [WorldGuard] (world) Lava fire is blocked.
-[08:56:31] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
-[08:56:31] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
-[08:56:31] [Server thread/INFO]: [WorldGuard] Loading region data...
-[08:56:31] [Server thread/INFO]: [BungeePortals] Enabling BungeePortals v1.2
-[08:56:31] [Server thread/INFO]: [BungeePortals] Metrics initiated!
-[08:56:31] [Server thread/INFO]: [BungeePortals] Commands registered!
-[08:56:31] [Server thread/INFO]: [BungeePortals] Events registered!
-[08:56:31] [Server thread/INFO]: [BungeePortals] Plugin channel registered!
-[08:56:31] [Server thread/INFO]: [BungeePortals] Configuration file config.yml loaded!
-[08:56:31] [Server thread/INFO]: [BungeePortals] Configuration file portals.yml loaded!
-[08:56:31] [Server thread/INFO]: [BungeePortals] Portal data loaded! (0ms)
-[08:56:31] [Server thread/INFO]: [BungeePortals] Save task started!
-[08:56:31] [Server thread/INFO]: [BungeePortals] Version 1.2 has been enabled. (6ms)
-[08:56:31] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v14.2.3
-[08:56:31] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mDetected Minecraft [33;1mv1_8_R3[32;1m, using [33;1mSpigotSkinRefresher[32;1m.[0;39m[m
+[08:41:17] [Server thread/INFO]: [0;32;1m >  No problems found. :)[m[m
 
-[08:56:32] [Server thread/INFO]: [RankCommand] Enabling RankCommand v1.4
-[08:56:32] [Server thread/INFO]: [ChestCommands] Enabling ChestCommands v3.5.6
-[08:56:32] [Server thread/INFO]: [ChestCommands] Hooked PlaceholderAPI
-[08:56:32] [Server thread/INFO]: [ChestCommands] Enabled Title features
-[08:56:32] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v1.2.1-SNAPSHOT
-[08:56:32] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[08:56:32] [Server thread/INFO]: [Geyser-Spigot] 
-[08:56:32] [Server thread/WARN]: [Geyser-Spigot] en_ is not a valid Bedrock language.
-[08:56:32] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 1.2.1-SNAPSHOT (git-master-86b2901)
-[08:56:32] [Server thread/INFO]: [Geyser-Spigot] 
-[08:56:32] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[08:56:41] [Network Listener - #1/INFO]: [Geyser-Spigot] Started Geyser on 0.0.0.0:19132
-[08:56:41] [Server thread/INFO]: [Geyser-Spigot] Done (8.591s)! Run /geyser help for help!
-[08:56:41] [Server thread/ERROR]: Error occurred while enabling Geyser-Spigot v1.2.1-SNAPSHOT (Is it up to date?)
+[08:41:17] [Server thread/INFO]: [0;32;1m [m[m
+
+[08:41:17] [Server thread/INFO]: [0;32;1m**************************************************[m[m
+
+[08:41:17] [Server thread/INFO]: [0;32;1m [m[m
+
+[08:41:17] [Server thread/INFO]: [CrispyAntiCrash] Enabling CrispyAntiCrash v1.2
+[08:41:17] [Server thread/INFO]: [ChatExpressions] Enabling ChatExpressions v5.0
+[08:41:17] [Server thread/INFO]: [DecentHolograms] Enabling DecentHolograms v2.0.6
+[08:41:17] [Server thread/INFO]: [Essentials] Enabling Essentials vTeamCity
+[08:41:17] [Server thread/INFO]: Bukkit version format changed. Version not checked.
+[08:41:17] [Server thread/INFO]: git-Spigot-21fe707-e1ebe52 (MC: 1.8.8)
+[08:41:17] [Server thread/INFO]: 1.8.8-R0.1-SNAPSHOT
+[08:41:18] [Server thread/INFO]: Using locale en
+[08:41:18] [Server thread/INFO]: Using locale en
+[08:41:18] [Server thread/INFO]: [Vault][Economy] Essentials Economy hooked.
+[08:41:18] [Server thread/INFO]: Essentials: Using config file enhanced permissions.
+[08:41:18] [Server thread/INFO]: Permissions listed in as player-commands will be given to all users.
+[08:41:18] [Server thread/INFO]: [ServerSelectorX] Enabling ServerSelectorX v3.6.0-legacy
+[08:41:18] [Server thread/ERROR]: [ServerSelectorX] Plugin ServerSelectorX v3.6.0-legacy has failed to register events for class xyz.derkades.serverselectorx.ItemMoveDropCancelListener because org/bukkit/event/player/PlayerSwapHandItemsEvent does not exist.
+[08:41:18] [Server thread/INFO]: [ServerSelectorX] Thank you for using ServerSelectorX. If you enjoy using this plugin, please consider buying the premium version. It has more features and placeholders update instantly. https://github.com/ServerSelectorX/ServerSelectorX/wiki/Premium
+[08:41:18] [Server thread/INFO]: [CleanChat] Enabling CleanChat v1.1
+[08:41:18] [Server thread/INFO]: [0;36;1m+----------+[m
+
+[08:41:18] [Server thread/INFO]: [0;36;1m|          |[m
+
+[08:41:18] [Server thread/INFO]: [0;36;1m|          |[m
+
+[08:41:18] [Server thread/INFO]: [0;36;1m|[0;36;22mClean Chat[0;36;1m|[m
+
+[08:41:18] [Server thread/INFO]: [0;36;1m|[0;36;22m   v1.1[0;36;1m   |[m
+
+[08:41:18] [Server thread/INFO]: [0;36;1m|[0;36;22m Enabled![0;36;1m |[m
+
+[08:41:18] [Server thread/INFO]: [0;36;1m|          |[m
+
+[08:41:18] [Server thread/INFO]: [0;36;1m|          |[m
+
+[08:41:18] [Server thread/INFO]: [0;36;1m+----------+[m
+
+[08:41:18] [Server thread/INFO]: [PlayerVisibilityReborn] Enabling PlayerVisibilityReborn v1.0.0-RELEASE
+[08:41:18] [Server thread/INFO]: [0;36;1m=-=-=-=-=-=-=-=-=[m
+
+[08:41:18] [Server thread/INFO]: [0;30;1m[[0;33;22mPlayerVisibilityReborn[0;30;1m] [0;32;22mversion [0;31;22m1.0.0-RELEASE [0;32;22mby xDesireRage has been enabled![m
+
+[08:41:18] [Server thread/INFO]: [0;36;1m=-=-=-=-=-=-=-=-=[m
+
+[08:41:18] [Server thread/INFO]: [BedWarsFireballFix] Enabling BedWarsFireballFix v0.2
+[08:41:18] [Server thread/INFO]:  [m
+
+[08:41:18] [Server thread/INFO]: BedWars1058 Fireball Fix[m
+
+[08:41:18] [Server thread/INFO]: by kimoVoid[m
+
+[08:41:18] [Server thread/INFO]:  [m
+
+[08:41:18] [Server thread/INFO]: [VoidSpawn] Enabling VoidSpawn v1.17.0
+[08:41:18] [Server thread/INFO]: [0;36;22m[[0;35;1mVoidSpawn[0;36;22m] [m[0;33;1mNo SkyBlock plugins found, disabling island mode support.[m
+
+[08:41:18] [Server thread/INFO]: [0;36;22m[[0;35;1mVoidSpawn[0;36;22m] [m[0;33;1mv1.17.0 by EnderCrest enabled[m
+
+[08:41:18] [Server thread/INFO]: [MVdWPlaceholderAPI] Enabling MVdWPlaceholderAPI v3.1.1
+[08:41:18] [Server thread/INFO]: [MVdWPlaceholderAPI] Initializing placeholders ...
+[08:41:18] [Server thread/INFO]: [MVdWPlaceholderAPI] Sending metrics ...
+[08:41:18] [Server thread/INFO]: [ImgPlacer] Enabling ImgPlacer v1.4.2
+[08:41:18] [Server thread/INFO]: [AdvanceTab] Enabling AdvanceTab v1.4.0
+[08:41:19] [Server thread/INFO]: +-------------------------+
+[08:41:19] [Server thread/INFO]:  _______  ______  ______  
+[08:41:19] [Server thread/INFO]:  |_   __| |  _  | |  _  | 
+[08:41:19] [Server thread/INFO]:    | |    | |_| | | |_| | 
+[08:41:19] [Server thread/INFO]:    | |    |  _  | |  _ <  
+[08:41:19] [Server thread/INFO]:    | |    | | | | | |_| | 
+[08:41:19] [Server thread/INFO]:    |_|    |_| |_| |_____| 
+[08:41:19] [Server thread/INFO]: +-------------------------+
+[08:41:19] [Server thread/INFO]:        Advanced Tab        
+[08:41:19] [Server thread/INFO]:    Developed By: _Joosh    
+[08:41:19] [Server thread/INFO]:    Current Version: 1.4.0
+[08:41:19] [Server thread/INFO]: +-------------------------+
+[08:41:19] [Server thread/INFO]: Placeholder API has been found and will be used.
+[08:41:19] [Server thread/INFO]: [BlocksHub] Enabling BlocksHub v3.1.1
+[08:41:19] [Server thread/INFO]: Unable to get the command map: unsupported version, field commandMap not found.
+
+[08:41:19] [Server thread/INFO]: Initializing access controllers[m
+
+[08:41:19] [Server thread/INFO]: Initializing block loggers[m
+
+[08:41:19] [Server thread/INFO]: [BlocksHub] Enabled
+[08:41:19] [Server thread/INFO]: [InteractiveBooks] Enabling InteractiveBooks v1.3.4
+[08:41:19] [Server thread/INFO]: [PermissionsEx] Enabling PermissionsEx v1.23.4
+[08:41:19] [Server thread/INFO]: [PermissionsEx] Initializing file backend
+[08:41:19] [Server thread/INFO]: [PermissionsEx] Permissions file successfully reloaded
+[08:41:19] [Server thread/INFO]: WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
+[08:41:19] [Server thread/INFO]: [Vault][Permission] PermissionsEx hooked.
+[08:41:19] [Server thread/INFO]: [Vault][Chat] PermissionsEx_Chat hooked.
+[08:41:19] [Server thread/INFO]: Essentials: Using PermissionsEx based permissions.
+[08:41:19] [Server thread/INFO]: [CustomHelp] Enabling CustomHelp v1.1
+[08:41:19] [Server thread/INFO]: [CustomHelp] CustomHelp has been enabled!
+[08:41:19] [Server thread/INFO]: [CrispyJoinMessages] Enabling CrispyJoinMessages v1.0
+[08:41:19] [Server thread/INFO]: [0;30;1m[[0;33;1mCrispyJoinMessages[0;30;1m] [0;37;22mPlugin enabled![m
+
+[08:41:19] [Server thread/INFO]: [TrHologram] Enabling TrHologram v1.11
+[08:41:19] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v6.1.3-SNAPSHOT;c904242
+[08:41:19] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[08:41:19] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[08:41:19] [Server thread/INFO]: [WorldGuard] (world) Lava fire is blocked.
+[08:41:19] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[08:41:19] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[08:41:19] [Server thread/INFO]: [WorldGuard] Loading region data...
+[08:41:19] [Server thread/INFO]: [BungeePortals] Enabling BungeePortals v1.2
+[08:41:19] [Server thread/INFO]: [BungeePortals] Metrics initiated!
+[08:41:19] [Server thread/INFO]: [BungeePortals] Commands registered!
+[08:41:19] [Server thread/INFO]: [BungeePortals] Events registered!
+[08:41:19] [Server thread/INFO]: [BungeePortals] Plugin channel registered!
+[08:41:19] [Server thread/INFO]: [BungeePortals] Configuration file config.yml loaded!
+[08:41:19] [Server thread/INFO]: [BungeePortals] Configuration file portals.yml loaded!
+[08:41:19] [Server thread/INFO]: [BungeePortals] Portal data loaded! (2ms)
+[08:41:19] [Server thread/INFO]: [BungeePortals] Save task started!
+[08:41:19] [Server thread/INFO]: [BungeePortals] Version 1.2 has been enabled. (22ms)
+[08:41:19] [Server thread/INFO]: [RankCommand] Enabling RankCommand v1.4
+[08:41:19] [Server thread/INFO]: [ChestCommands] Enabling ChestCommands v3.5.6
+[08:41:19] [Server thread/INFO]: [ChestCommands] Hooked PlaceholderAPI
+[08:41:19] [Server thread/INFO]: [ChestCommands] Enabled Title features
+[08:41:19] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v1.2.1-SNAPSHOT
+[08:41:20] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[08:41:20] [Server thread/INFO]: [Geyser-Spigot] 
+[08:41:20] [Server thread/WARN]: [Geyser-Spigot] en_ is not a valid Bedrock language.
+[08:41:20] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 1.2.1-SNAPSHOT (git-master-86b2901)
+[08:41:20] [Server thread/INFO]: [Geyser-Spigot] 
+[08:41:20] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[08:41:24] [Network Listener - #1/INFO]: [Geyser-Spigot] Started Geyser on 0.0.0.0:19132
+[08:41:24] [Server thread/INFO]: [Geyser-Spigot] Done (3.801s)! Run /geyser help for help!
+[08:41:24] [Server thread/ERROR]: Error occurred while enabling Geyser-Spigot v1.2.1-SNAPSHOT (Is it up to date?)
 java.lang.NoSuchMethodError: 'java.util.List us.myles.ViaVersion.api.protocol.ProtocolRegistry.getProtocolPath(int, int)'
 	at org.geysermc.platform.spigot.GeyserSpigotPlugin.isViaVersionNeeded(GeyserSpigotPlugin.java:309) ~[?:?]
 	at org.geysermc.platform.spigot.GeyserSpigotPlugin.onEnable(GeyserSpigotPlugin.java:167) ~[?:?]
@@ -502,44 +570,44 @@ java.lang.NoSuchMethodError: 'java.util.List us.myles.ViaVersion.api.protocol.Pr
 	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:263) ~[spigot.jar:git-Spigot-21fe707-e1ebe52]
 	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:525) ~[spigot.jar:git-Spigot-21fe707-e1ebe52]
 	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
-[08:56:41] [Server thread/INFO]: [GadgetsMenu] Enabling GadgetsMenu v4.5.27
-[08:56:43] [Server thread/INFO]: [GadgetsMenu] ------------------------------------------------------
-[08:56:43] [Server thread/INFO]: [GadgetsMenu]       GadgetsMenu [Premium] 4.5.27 is loading...
-[08:56:43] [Server thread/INFO]: [GadgetsMenu]    [server: git-Spigot-21fe707-e1ebe52 (MC: 1.8.8)]
-[08:56:43] [Server thread/INFO]: [GadgetsMenu]                Plugin by Yap Zhen Yie.
-[08:56:43] [Server thread/INFO]: [GadgetsMenu]              Date Modified: 30 June 2020
-[08:56:43] [Server thread/INFO]: [GadgetsMenu]                            
-[08:56:43] [Server thread/INFO]: [GadgetsMenu]              Initializing module v1_8_R3
-[08:56:43] [Server thread/INFO]: [GadgetsMenu] ------------------------------------------------------
-[08:56:45] [Server thread/INFO]: [GadgetsMenu] Connecting to SQLite database...
-[08:56:45] [Server thread/INFO]: [GadgetsMenu] Successfully connected to SQLite database.
-[08:56:45] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: gadgetsmenu
-[08:56:45] [Server thread/INFO]: [GadgetsMenu] [Placeholder] PlaceholderAPI hooked.
-[08:56:46] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.25-SNAPSHOT (build 1770)
-[08:56:46] [Server thread/INFO]: [BedWars1058-FireballEffect] Enabling BedWars1058-FireballEffect v1.0
-[08:56:46] [Server thread/INFO]: [BedWars1058-FireballEffect] BedWars1058-FireballEffect by JoseMarcellio
-[08:56:46] [Server thread/INFO]: [BedWars1058-PopUpTowers] Enabling BedWars1058-PopUpTowers v0.4
-[08:56:46] [Server thread/INFO]:  [m
+[08:41:24] [Server thread/INFO]: [GadgetsMenu] Enabling GadgetsMenu v4.5.27
+[08:41:24] [Server thread/INFO]: [GadgetsMenu] ------------------------------------------------------
+[08:41:24] [Server thread/INFO]: [GadgetsMenu]       GadgetsMenu [Premium] 4.5.27 is loading...
+[08:41:24] [Server thread/INFO]: [GadgetsMenu]    [server: git-Spigot-21fe707-e1ebe52 (MC: 1.8.8)]
+[08:41:24] [Server thread/INFO]: [GadgetsMenu]                Plugin by Yap Zhen Yie.
+[08:41:24] [Server thread/INFO]: [GadgetsMenu]              Date Modified: 30 June 2020
+[08:41:24] [Server thread/INFO]: [GadgetsMenu]                            
+[08:41:24] [Server thread/INFO]: [GadgetsMenu]              Initializing module v1_8_R3
+[08:41:24] [Server thread/INFO]: [GadgetsMenu] ------------------------------------------------------
+[08:41:25] [Server thread/INFO]: [GadgetsMenu] Connecting to SQLite database...
+[08:41:25] [Server thread/INFO]: [GadgetsMenu] Successfully connected to SQLite database.
+[08:41:25] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: gadgetsmenu
+[08:41:25] [Server thread/INFO]: [GadgetsMenu] [Placeholder] PlaceholderAPI hooked.
+[08:41:25] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.25-SNAPSHOT (build 1770)
+[08:41:25] [Server thread/INFO]: [BedWars1058-FireballEffect] Enabling BedWars1058-FireballEffect v1.0
+[08:41:25] [Server thread/INFO]: [BedWars1058-FireballEffect] BedWars1058-FireballEffect by JoseMarcellio
+[08:41:25] [Server thread/INFO]: [BedWars1058-PopUpTowers] Enabling BedWars1058-PopUpTowers v0.4
+[08:41:25] [Server thread/INFO]:  [m
 
-[08:56:46] [Server thread/INFO]: BedWars1058 Pop-Up Towers[m
+[08:41:25] [Server thread/INFO]: BedWars1058 Pop-Up Towers[m
 
-[08:56:46] [Server thread/INFO]: by kimoVoid[m
+[08:41:25] [Server thread/INFO]: by kimoVoid[m
 
-[08:56:47] [Server thread/INFO]:  [m
+[08:41:25] [Server thread/INFO]:  [m
 
-[08:56:47] [Server thread/INFO]: [BedWars1058-GenSplit] Enabling BedWars1058-GenSplit v0.2
-[08:56:47] [Server thread/INFO]:  [m
+[08:41:25] [Server thread/INFO]: [BedWars1058-GenSplit] Enabling BedWars1058-GenSplit v0.2
+[08:41:25] [Server thread/INFO]:  [m
 
-[08:56:47] [Server thread/INFO]: BedWars1058 Generator Split[m
+[08:41:25] [Server thread/INFO]: BedWars1058 Generator Split[m
 
-[08:56:47] [Server thread/INFO]: by kimoVoid[m
+[08:41:25] [Server thread/INFO]: by kimoVoid[m
 
-[08:56:47] [Server thread/INFO]:  [m
+[08:41:25] [Server thread/INFO]:  [m
 
-[08:56:47] [Server thread/INFO]: [BedWars1058-AntiDrop] Enabling BedWars1058-AntiDrop v1.1
-[08:56:47] [Server thread/INFO]: [BedWars1058-AntiDrop] BedWars1058 found. Loading addon...
-[08:56:47] [Server thread/INFO]: [BedWars1058-BedCoins] Enabling BedWars1058-BedCoins v0.1beta
-[08:56:47] [Server thread/ERROR]: Error occurred while enabling BedWars1058-BedCoins v0.1beta (Is it up to date?)
+[08:41:25] [Server thread/INFO]: [BedWars1058-AntiDrop] Enabling BedWars1058-AntiDrop v1.1
+[08:41:25] [Server thread/INFO]: [BedWars1058-AntiDrop] BedWars1058 found. Loading addon...
+[08:41:25] [Server thread/INFO]: [BedWars1058-BedCoins] Enabling BedWars1058-BedCoins v0.1beta
+[08:41:25] [Server thread/ERROR]: Error occurred while enabling BedWars1058-BedCoins v0.1beta (Is it up to date?)
 java.lang.NoClassDefFoundError: com/andrei1058/bedwars/api/GameAPI
 	at me.mrdarkness462.bedcoins.Main.onEnable(Main.java:31) ~[?:?]
 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:321) ~[spigot.jar:git-Spigot-21fe707-e1ebe52]
@@ -560,15 +628,15 @@ Caused by: java.lang.ClassNotFoundException: com.andrei1058.bedwars.api.GameAPI
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[?:?]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
 	... 12 more
-[08:56:47] [Server thread/INFO]: [UltraDeliveryMan] Enabling UltraDeliveryMan v1.8.0
-[08:56:47] [Server thread/INFO]: [0;31;1m[21mUltraDM [0;30;1m| [0;32;1mHooked into [0;30;1mPlaceholderAPI[0;32;1m correctly![m
+[08:41:25] [Server thread/INFO]: [UltraDeliveryMan] Enabling UltraDeliveryMan v1.8.0
+[08:41:25] [Server thread/INFO]: [0;31;1m[21mUltraDM [0;30;1m| [0;32;1mHooked into [0;30;1mPlaceholderAPI[0;32;1m correctly![m
 
-[08:56:47] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: udm
-[08:56:47] [Server thread/INFO]: [0;31;1m[21mUltraDM [0;30;1m| [0;33;1mSQLLite connected correctly.[m
+[08:41:25] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: udm
+[08:41:25] [Server thread/INFO]: [0;31;1m[21mUltraDM [0;30;1m| [0;33;1mSQLLite connected correctly.[m
 
-[08:56:47] [Server thread/INFO]: [BedWars1058-KillSound] Enabling BedWars1058-KillSound v1.0
-[08:56:47] [Server thread/INFO]: [BedWars1058-LevelSystem] Enabling BedWars1058-LevelSystem v0.2beta
-[08:56:47] [Server thread/ERROR]: Error occurred while enabling BedWars1058-LevelSystem v0.2beta (Is it up to date?)
+[08:41:25] [Server thread/INFO]: [BedWars1058-KillSound] Enabling BedWars1058-KillSound v1.0
+[08:41:25] [Server thread/INFO]: [BedWars1058-LevelSystem] Enabling BedWars1058-LevelSystem v0.2beta
+[08:41:25] [Server thread/ERROR]: Error occurred while enabling BedWars1058-LevelSystem v0.2beta (Is it up to date?)
 java.lang.NoClassDefFoundError: com/andrei1058/bedwars/api/GameAPI
 	at me.mrdarkness462.levelsystem.Main.onEnable(Main.java:25) ~[?:?]
 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:321) ~[spigot.jar:git-Spigot-21fe707-e1ebe52]
@@ -589,8 +657,8 @@ Caused by: java.lang.ClassNotFoundException: com.andrei1058.bedwars.api.GameAPI
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[?:?]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
 	... 12 more
-[08:56:47] [Server thread/INFO]: [BedWars1058-WinStreak] Enabling BedWars1058-WinStreak v0.1beta
-[08:56:47] [Server thread/ERROR]: Error occurred while enabling BedWars1058-WinStreak v0.1beta (Is it up to date?)
+[08:41:25] [Server thread/INFO]: [BedWars1058-WinStreak] Enabling BedWars1058-WinStreak v0.1beta
+[08:41:25] [Server thread/ERROR]: Error occurred while enabling BedWars1058-WinStreak v0.1beta (Is it up to date?)
 java.lang.NoClassDefFoundError: com/andrei1058/bedwars/api/GameAPI
 	at me.mrdarkness462.winstreak.Main.onEnable(Main.java:29) ~[?:?]
 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:321) ~[spigot.jar:git-Spigot-21fe707-e1ebe52]
@@ -611,11 +679,11 @@ Caused by: java.lang.ClassNotFoundException: com.andrei1058.bedwars.api.GameAPI
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[?:?]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
 	... 12 more
-[08:56:47] [Server thread/INFO]: [LeaderHeadsRevamped] Enabling LeaderHeadsRevamped v4.0.6
-[08:56:47] [Server thread/INFO]: [LeaderHeadsRevamped] Hooked into MVdWPlaceholderAPI
-[08:56:47] [Server thread/INFO]: [LeaderHeadsRevamped] Hooked into PlaceholderAPI
-[08:56:47] [Server thread/INFO]: [LeaderHeadsRevamped] Hooked into Citizens
-[08:56:48] [Server thread/ERROR]: Error occurred while enabling LeaderHeadsRevamped v4.0.6 (Is it up to date?)
+[08:41:25] [Server thread/INFO]: [LeaderHeadsRevamped] Enabling LeaderHeadsRevamped v4.0.6
+[08:41:25] [Server thread/INFO]: [LeaderHeadsRevamped] Hooked into MVdWPlaceholderAPI
+[08:41:25] [Server thread/INFO]: [LeaderHeadsRevamped] Hooked into PlaceholderAPI
+[08:41:25] [Server thread/INFO]: [LeaderHeadsRevamped] Hooked into Citizens
+[08:41:26] [Server thread/ERROR]: Error occurred while enabling LeaderHeadsRevamped v4.0.6 (Is it up to date?)
 java.lang.IncompatibleClassChangeError: Inconsistent constant pool data in classfile for class tech/panoply/leaderheads/libs/co/aikar/acf/RootCommand. Method 'void lambda$addChildShared$0(com.google.common.collect.SetMultimap, java.util.Map$Entry)' at index 63 is CONSTANT_MethodRef and should be CONSTANT_InterfaceMethodRef
 	at tech.panoply.leaderheads.libs.co.aikar.acf.RootCommand.addChildShared(RootCommand.java:47) ~[?:?]
 	at tech.panoply.leaderheads.libs.co.aikar.acf.BukkitRootCommand.addChild(BukkitRootCommand.java:92) ~[?:?]
@@ -637,55 +705,55 @@ java.lang.IncompatibleClassChangeError: Inconsistent constant pool data in class
 	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:263) ~[spigot.jar:git-Spigot-21fe707-e1ebe52]
 	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:525) ~[spigot.jar:git-Spigot-21fe707-e1ebe52]
 	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
-[08:56:48] [Server thread/INFO]: [BedWars1058-Compass] Enabling BedWars1058-Compass v1.3.1
-[08:56:48] [Server thread/INFO]: [BedWars1058-Compass] Successfully loaded in 631ms
-[08:56:48] [Server thread/INFO]: [BedWars1058-PrivateGames] Enabling BedWars1058-PrivateGames v1.1.0
-[08:56:48] [Server thread/INFO]: [BedWars1058-PrivateGames] BedWars1058 found, using it as a datastore
-[08:56:49] [Server thread/INFO]: [BedWars1058-PrivateGames] SQLite database successfully connected and established.
-[08:56:49] [Server thread/INFO]: [BedWars1058-PrivateGames] Successfully loaded in 789ms
-[08:56:49] [Server thread/INFO]: [BedWars1058-FireballDamageFix] Enabling BedWars1058-FireballDamageFix v1.0
-[08:56:49] [Server thread/INFO]: [BedWars1058-FireballDamageFix] BedWars1058-FireballFix by JoseMarcellio
-[08:56:49] [Server thread/INFO]: [CommandNPC] Enabling CommandNPC v1.9.1
-[08:56:49] [Server thread/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mVault compatible economy found! Economy support for CommandNPC has been enabled.[m
+[08:41:26] [Server thread/INFO]: [BedWars1058-Compass] Enabling BedWars1058-Compass v1.3.1
+[08:41:26] [Server thread/INFO]: [BedWars1058-Compass] Successfully loaded in 221ms
+[08:41:26] [Server thread/INFO]: [BedWars1058-PrivateGames] Enabling BedWars1058-PrivateGames v1.1.0
+[08:41:26] [Server thread/INFO]: [BedWars1058-PrivateGames] BedWars1058 found, using it as a datastore
+[08:41:26] [Server thread/INFO]: [BedWars1058-PrivateGames] SQLite database successfully connected and established.
+[08:41:26] [Server thread/INFO]: [BedWars1058-PrivateGames] Successfully loaded in 231ms
+[08:41:26] [Server thread/INFO]: [BedWars1058-FireballDamageFix] Enabling BedWars1058-FireballDamageFix v1.0
+[08:41:26] [Server thread/INFO]: [BedWars1058-FireballDamageFix] BedWars1058-FireballFix by JoseMarcellio
+[08:41:26] [Server thread/INFO]: [CommandNPC] Enabling CommandNPC v1.9.1
+[08:41:26] [Server thread/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mVault compatible economy found! Economy support for CommandNPC has been enabled.[m
 
-[08:56:49] [Server thread/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mInitiating Database[m
+[08:41:26] [Server thread/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mInitiating Database[m
 
-[08:56:49] [Thread-24/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mLoading commands complete![m
+[08:41:26] [Thread-24/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mLoading commands complete![m
 
-[08:56:49] [Server thread/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mInjecting command info into Citizens.[m
+[08:41:26] [Server thread/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mInjecting command info into Citizens.[m
 
-[08:56:49] [Server thread/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mCommandNPC successfully loaded![m
+[08:41:26] [Server thread/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mCommandNPC successfully loaded![m
 
-[08:56:49] [Server thread/INFO]: [BedWars1058-BedBreakEffect] Enabling BedWars1058-BedBreakEffect v1.0
-[08:56:49] [Server thread/INFO]: [BedWars1058-BedBreakEffect] BedWars1058-BedBreakEffect by JoseMarcellio
-[08:56:49] [Server thread/INFO]: [BedWars1058-HealPool] Enabling BedWars1058-HealPool v1.2
-[08:56:49] [Server thread/ERROR]: [BedWars1058-HealPool] Plugin BedWars1058-HealPool v1.2 has failed to register events for class com.andrei1058.bedwars.healpool.Main because com/andrei1058/bedwars/api/events/shop/UpgradeBuyEvent does not exist.
-[08:56:49] [Server thread/INFO]: [BedWars1058-TeamSelector] Enabling BedWars1058-TeamSelector v0.5.2
-[08:56:49] [Server thread/INFO]: [BedWars1058-TeamSelector] Hook into BedWars1058!
-[08:56:49] [Server thread/INFO]: [Denizen] Enabling Denizen v1.0.3-SNAPSHOT (build 1670-REL)
-[08:56:49] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mInitializing Denizen Core v1.40 (Build 237), implementation for Bukkit version 1.0.3-SNAPSHOT (build 1670-REL) [m
+[08:41:26] [Server thread/INFO]: [BedWars1058-BedBreakEffect] Enabling BedWars1058-BedBreakEffect v1.0
+[08:41:26] [Server thread/INFO]: [BedWars1058-BedBreakEffect] BedWars1058-BedBreakEffect by JoseMarcellio
+[08:41:26] [Server thread/INFO]: [BedWars1058-HealPool] Enabling BedWars1058-HealPool v1.2
+[08:41:26] [Server thread/ERROR]: [BedWars1058-HealPool] Plugin BedWars1058-HealPool v1.2 has failed to register events for class com.andrei1058.bedwars.healpool.Main because com/andrei1058/bedwars/api/events/shop/UpgradeBuyEvent does not exist.
+[08:41:26] [Server thread/INFO]: [BedWars1058-TeamSelector] Enabling BedWars1058-TeamSelector v0.5.2
+[08:41:26] [Server thread/INFO]: [BedWars1058-TeamSelector] Hook into BedWars1058!
+[08:41:26] [Server thread/INFO]: [Denizen] Enabling Denizen v1.0.3-SNAPSHOT (build 1670-REL)
+[08:41:26] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mInitializing Denizen Core v1.40 (Build 237), implementation for Bukkit version 1.0.3-SNAPSHOT (build 1670-REL) [m
 
-[08:56:49] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1m[0;35;1m+-------------------------+ [m
+[08:41:26] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1m[0;35;1m+-------------------------+ [m
 
-[08:56:49] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1m[0;33;1m _/_ _  ._  _ _ [m
+[08:41:26] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1m[0;33;1m _/_ _  ._  _ _ [m
 
-[08:56:49] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1m[0;33;1m(/(-/ )/ /_(-/ ) [0;37;22m scriptable minecraft [m
+[08:41:26] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1m[0;33;1m(/(-/ )/ /_(-/ ) [0;37;22m scriptable minecraft [m
 
-[08:56:49] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1m [m
+[08:41:26] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1m [m
 
-[08:56:49] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1m[0;37;22mby: [0;37;1mmcmonkey, Morphan1, aufdemrand and others [m
+[08:41:26] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1m[0;37;22mby: [0;37;1mmcmonkey, Morphan1, aufdemrand and others [m
 
-[08:56:49] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1m[0;37;22mChat with us at: [0;37;1m https://discord.gg/Q6pZGSR [m
+[08:41:26] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1m[0;37;22mChat with us at: [0;37;1m https://discord.gg/Q6pZGSR [m
 
-[08:56:49] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1m[0;37;22mOr learn more at: [0;37;1m https://denizenscript.com [m
+[08:41:26] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1m[0;37;22mOr learn more at: [0;37;1m https://denizenscript.com [m
 
-[08:56:49] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1m[0;37;22mversion: [0;37;1m1.0.3-SNAPSHOT (build 1670-REL) [m
+[08:41:26] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1m[0;37;22mversion: [0;37;1m1.0.3-SNAPSHOT (build 1670-REL) [m
 
-[08:56:49] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1m[0;35;1m+-------------------------+ [m
+[08:41:26] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1m[0;35;1m+-------------------------+ [m
 
-[08:56:50] [Server thread/INFO]: [0;35;1m [0;31;1mERROR! [0;37;1mNull player CraftOfflinePlayer[UUID=b9736c10-8fa0-4cac-830f-5052c359edee] [m
+[08:41:26] [Server thread/INFO]: [0;35;1m [0;31;1mERROR! [0;37;1mNull player CraftOfflinePlayer[UUID=b9736c10-8fa0-4cac-830f-5052c359edee] [m
 
-[08:56:50] [Server thread/INFO]: [0;35;1m [0;32;1mOKAY! [0;37;1mLoaded core commands: [showfake, invisible, animate, ban, modifyblock, cast, midi, else, explode, sidebar, cooldown, 
+[08:41:26] [Server thread/INFO]: [0;35;1m [0;32;1mOKAY! [0;37;1mLoaded core commands: [showfake, invisible, animate, ban, modifyblock, cast, midi, else, explode, sidebar, cooldown, 
                    weather, action, scoreboard, if, give, worldborder, chunkload, lookclose, zap, execute, mount, announce, push, fail, firework, 
                    light, reset, hurt, nbt, wait, flag, log, despawn, webget, goto, attack, event, stand, map, resume, break, strike, health, 
                    team, trigger, fly, disengage, gamerule, kick, playsound, rename, chat, anchor, fish, leash, queue, rotate, sign, run, 
@@ -695,167 +763,139 @@ java.lang.IncompatibleClassChangeError: Inconsistent constant pool data in class
                    filecopy, sit, burn, debug, determine, assignment, permission, follow, displayitem, scribe, async, createworld, spawn, equip, 
                    money, engage, time, inject, mark, age, walk] [m
 
-[08:56:50] [Server thread/INFO]: [0;35;1m [0;32;1mOKAY! [0;37;1mLoaded core triggers: [CHAT, CLICK, PROXIMITY, DAMAGE] [m
+[08:41:26] [Server thread/INFO]: [0;35;1m [0;32;1mOKAY! [0;37;1mLoaded core triggers: [CHAT, CLICK, PROXIMITY, DAMAGE] [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dBiome as b [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dBiome as b [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dChunk as ch [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dChunk as ch [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dColor as co [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dColor as co [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dCuboid as cu [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dCuboid as cu [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dEllipsoid as ellipsoid [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dEllipsoid as ellipsoid [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dEntity as e [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dEntity as e [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dInventory as in [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dInventory as in [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dItem as i [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dItem as i [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dLocation as l [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dLocation as l [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dMaterial as m [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dMaterial as m [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dNPC as n [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dNPC as n [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dPlayer as p [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dPlayer as p [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dPlugin as pl [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dPlugin as pl [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dWorld as w [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dWorld as w [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: CustomObject as custom [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: CustomObject as custom [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dList as li [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dList as li [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dList as  fl [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dList as  fl [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dScript as s [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: dScript as s [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: Element as el [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: Element as el [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: Duration as d [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: Duration as d [m
 
-[08:56:50] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: ScriptQueue as q [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mRegistered: ScriptQueue as q [m
 
-[08:56:50] [Server thread/INFO]: [0;35;1m [0;32;1mOKAY! [0;37;1mAdded objects to the ObjectFetcher [b, d, ch, e, in, fl, custom, el, i, co, l, m, n, ellipsoid, p, q, cu, s, w, pl, li] [m
+[08:41:27] [Server thread/INFO]: [0;35;1m [0;32;1mOKAY! [0;37;1mAdded objects to the ObjectFetcher [b, d, ch, e, in, fl, custom, el, i, co, l, m, n, ellipsoid, p, q, cu, s, w, pl, li] [m
 
-[08:56:50] [Server thread/INFO]: [BedWars1058-LobbyEffect] Enabling BedWars1058-LobbyEffect v1.1
-[08:56:50] [Server thread/INFO]: [BedWars1058-LobbyEffect] BedWars1058-LobbyEffect by JoseMarcellio
-[08:56:50] [Server thread/INFO]: [BedWars1058-Map] Enabling BedWars1058-Map v0.6
-[08:56:50] [Server thread/INFO]: [BedWars1058-Map] Hook into BedWars1058!
-[08:56:50] [Server thread/INFO]: [BedWars1058-Map] Hook into BedWars1058!
-[08:56:50] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[08:56:51] [Server thread/INFO]: Done (25.984s)! For help, type "help" or "?"
-[08:56:51] [Server thread/INFO]: [BedWars1058] Hook into vault chat support!
-[08:56:51] [Server thread/INFO]: [BedWars1058] Hook into vault economy support!
-[08:56:51] [Server thread/INFO]: [0;32;22m[[0;32;1mChestCommands[0;32;22m] [0;32;1mFound a new version: v4.0.5[0;37;1m (yours: v3.5.6)[m
+[08:41:27] [Server thread/INFO]: [BedWars1058-LobbyEffect] Enabling BedWars1058-LobbyEffect v1.1
+[08:41:27] [Server thread/INFO]: [BedWars1058-LobbyEffect] BedWars1058-LobbyEffect by JoseMarcellio
+[08:41:27] [Server thread/INFO]: [BedWars1058-Map] Enabling BedWars1058-Map v0.6
+[08:41:27] [Server thread/INFO]: [BedWars1058-Map] Hook into BedWars1058!
+[08:41:27] [Server thread/INFO]: [BedWars1058-Map] Hook into BedWars1058!
+[08:41:27] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[08:41:27] [Server thread/INFO]: Done (10.736s)! For help, type "help" or "?"
+[08:41:27] [Server thread/INFO]: [BedWars1058] Hook into vault chat support!
+[08:41:27] [Server thread/INFO]: [BedWars1058] Hook into vault economy support!
+[08:41:27] [Server thread/INFO]: [0;32;22m[[0;32;1mChestCommands[0;32;22m] [0;32;1mFound a new version: v4.0.5[0;37;1m (yours: v3.5.6)[m
 
-[08:56:51] [Server thread/INFO]: [0;32;22m[[0;32;1mChestCommands[0;32;22m] [0;32;1m[0;37;1mDownload it on Bukkit Dev:[m
+[08:41:27] [Server thread/INFO]: [0;32;22m[[0;32;1mChestCommands[0;32;22m] [0;32;1m[0;37;1mDownload it on Bukkit Dev:[m
 
-[08:56:51] [Server thread/INFO]: [0;32;22m[[0;32;1mChestCommands[0;32;22m] [0;32;1m[0;37;1mdev.bukkit.org/bukkit-plugins/chest-commands[m
+[08:41:27] [Server thread/INFO]: [0;32;22m[[0;32;1mChestCommands[0;32;22m] [0;32;1m[0;37;1mdev.bukkit.org/bukkit-plugins/chest-commands[m
 
-[08:56:51] [Server thread/INFO]: [DecentHolograms] Loading holograms... 
-[08:56:51] [Server thread/WARN]: eu.decentsoftware.holograms.api.utils.exception.LocationParseException: World 'LobbyTB' not found.
+[08:41:27] [Server thread/INFO]: [DecentHolograms] Loading holograms... 
+[08:41:27] [Server thread/WARN]: eu.decentsoftware.holograms.api.utils.exception.LocationParseException: World 'LobbyTB' not found.
 
-[08:56:51] [Server thread/WARN]: 	at eu.decentsoftware.holograms.api.utils.location.LocationUtils.asLocationE(LocationUtils.java:51)
+[08:41:27] [Server thread/WARN]: 	at eu.decentsoftware.holograms.api.utils.location.LocationUtils.asLocationE(LocationUtils.java:51)
 
-[08:56:51] [Server thread/WARN]: 	at eu.decentsoftware.holograms.api.utils.location.LocationUtils.asLocation(LocationUtils.java:26)
+[08:41:27] [Server thread/WARN]: 	at eu.decentsoftware.holograms.api.utils.location.LocationUtils.asLocation(LocationUtils.java:26)
 
-[08:56:51] [Server thread/WARN]: 	at eu.decentsoftware.holograms.api.holograms.Hologram.fromFile(Hologram.java:60)
+[08:41:27] [Server thread/WARN]: 	at eu.decentsoftware.holograms.api.holograms.Hologram.fromFile(Hologram.java:60)
 
-[08:56:51] [Server thread/WARN]: 	at eu.decentsoftware.holograms.api.holograms.HologramManager.loadHolograms(HologramManager.java:195)
+[08:41:27] [Server thread/WARN]: 	at eu.decentsoftware.holograms.api.holograms.HologramManager.loadHolograms(HologramManager.java:195)
 
-[08:56:51] [Server thread/WARN]: 	at eu.decentsoftware.holograms.api.holograms.HologramManager.reload(HologramManager.java:86)
+[08:41:27] [Server thread/WARN]: 	at eu.decentsoftware.holograms.api.holograms.HologramManager.reload(HologramManager.java:86)
 
-[08:56:51] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftTask.run(CraftTask.java:71)
+[08:41:27] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftTask.run(CraftTask.java:71)
 
-[08:56:51] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:350)
+[08:41:27] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:350)
 
-[08:56:51] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.MinecraftServer.B(MinecraftServer.java:723)
+[08:41:27] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.MinecraftServer.B(MinecraftServer.java:723)
 
-[08:56:51] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.DedicatedServer.B(DedicatedServer.java:374)
+[08:41:27] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.DedicatedServer.B(DedicatedServer.java:374)
 
-[08:56:51] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.MinecraftServer.A(MinecraftServer.java:654)
+[08:41:27] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.MinecraftServer.A(MinecraftServer.java:654)
 
-[08:56:51] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:557)
+[08:41:27] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:557)
 
-[08:56:51] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[08:41:27] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-[08:56:51] [Server thread/INFO]: [DecentHolograms] Loaded 2 holograms!
-[08:56:51] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.8.x (47)
-[08:56:51] [Server thread/WARN]: [ViaVersion] This version of Minecraft is extremely outdated and support for it has reached its end of life. You will still be able to run Via on this Minecraft version, but we are unlikely to provide any further fixes or help with problems specific to legacy Minecraft versions. Please consider updating to give your players a better experience and to avoid issues that have long been fixed.
-[08:56:51] [Server thread/INFO]: [0;35;1m [0;31;1mERROR! [0;37;1mWoah! No scripts in /plugins/Denizen/scripts/ to load! [m
+[08:41:27] [Server thread/INFO]: [DecentHolograms] Loaded 2 holograms!
+[08:41:27] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.8.x (47)
+[08:41:27] [Server thread/WARN]: [ViaVersion] This version of Minecraft is extremely outdated and support for it has reached its end of life. You will still be able to run Via on this Minecraft version, but we are unlikely to provide any further fixes or help with problems specific to legacy Minecraft versions. Please consider updating to give your players a better experience and to avoid issues that have long been fixed.
+[08:41:27] [Server thread/INFO]: [0;35;1m [0;31;1mERROR! [0;37;1mWoah! No scripts in /plugins/Denizen/scripts/ to load! [m
 
-[08:56:51] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mScanning 0 world scripts... [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mScanning 0 world scripts... [m
 
-[08:56:51] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mReloading script events... [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [Denizen] [0;37;1mReloading script events... [m
 
-[08:56:51] [Server thread/INFO]: [0;33;1m+> [] [0;37;1m[0;35;1m+-------------------------+ [m
+[08:41:27] [Server thread/INFO]: [0;33;1m+> [] [0;37;1m[0;35;1m+-------------------------+ [m
 
-[08:56:51] [Server thread/INFO]: [LeaderHeadsRevamped] Creating PlaceholderAPI placeholders
-[08:56:51] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: leaderheads
-[08:56:51] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
-[08:56:51] [Server thread/INFO]: [LeaderHeadsRevamped] Creating MVdWPlaceholderAPI placeholders
-[08:56:51] [Server thread/INFO]: [MVdWPlaceholderAPI] LeaderHeadsRevamped added custom placeholder {leaderheads_*_*_*_*}
-[08:56:51] [Craft Scheduler Thread - 0/INFO]: [Vault] You are running the latest version
-[08:56:51] [Server thread/INFO]: [Citizens] Loaded 17 NPCs.
-[08:56:51] [Server thread/INFO]: [BlocksHub] Loading plugins...
-[08:56:51] [Server thread/INFO]: [BlocksHub] Unable to reate entry point.: unsupported version.
-[08:56:51] [Server thread/INFO]: [BlocksHub] Unable to create entry point org.primesoft.blockshub.accessors.bukkit.factions.FactionsPlugin for resource /plugins/bukkit/accessors/BlocksHub-Accessor-Factions.jar.
-[08:56:51] [Server thread/INFO]: [BlocksHub] Unable to reate entry point.: unsupported version.
-[08:56:51] [Server thread/INFO]: [BlocksHub] Unable to create entry point org.primesoft.blockshub.accessors.bukkit.griefPrevention.BlocksHubPlugin for resource /plugins/bukkit/accessors/BlocksHub-Accessor-GriefPrevention.jar.
-[08:56:51] [Server thread/INFO]: [BlocksHub] Unable to reate entry point.: unsupported version.
-[08:56:51] [Server thread/INFO]: [BlocksHub] Unable to create entry point org.primesoft.blockshub.accessors.bukkit.worldGuard.BlocksHubPlugin for resource /plugins/bukkit/accessors/BlocksHub-Accessor-WorldGuard.jar.
-[08:56:51] [Server thread/INFO]: [BlocksHub] Unable to reate entry point.: unsupported version.
-[08:56:51] [Server thread/INFO]: [BlocksHub] Unable to create entry point org.primesoft.blockshub.logger.bukkit.coreProtect.BlocksHubPlugin for resource /plugins/bukkit/loggers/BlocksHub-Logger-CoreProtect.jar.
-[08:56:51] [Server thread/INFO]: [BlocksHub] Unable to reate entry point.: unsupported version.
-[08:56:51] [Server thread/INFO]: [BlocksHub] Unable to create entry point org.primesoft.blockshub.logger.bukkit.logBlock.BlocksHubPlugin for resource /plugins/bukkit/loggers/BlocksHub-Logger-LogBlock.jar.
-[08:56:52] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: randomcolor
-[08:56:52] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: rainbowcolor
-[08:56:52] [Craft Scheduler Thread - 5/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[GitHubUpdate] Downloading update...[0;39m[m
+[08:41:27] [Server thread/INFO]: [LeaderHeadsRevamped] Creating PlaceholderAPI placeholders
+[08:41:27] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: leaderheads
+[08:41:27] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[08:41:27] [Server thread/INFO]: [LeaderHeadsRevamped] Creating MVdWPlaceholderAPI placeholders
+[08:41:27] [Server thread/INFO]: [MVdWPlaceholderAPI] LeaderHeadsRevamped added custom placeholder {leaderheads_*_*_*_*}
+[08:41:27] [Craft Scheduler Thread - 0/INFO]: [Vault] You are running the latest version
+[08:41:27] [Server thread/INFO]: [Citizens] Loaded 17 NPCs.
+[08:41:27] [Server thread/INFO]: [BlocksHub] Loading plugins...
+[08:41:27] [Server thread/INFO]: [BlocksHub] Unable to reate entry point.: unsupported version.
+[08:41:27] [Server thread/INFO]: [BlocksHub] Unable to create entry point org.primesoft.blockshub.accessors.bukkit.factions.FactionsPlugin for resource /plugins/bukkit/accessors/BlocksHub-Accessor-Factions.jar.
+[08:41:27] [Server thread/INFO]: [BlocksHub] Unable to reate entry point.: unsupported version.
+[08:41:27] [Server thread/INFO]: [BlocksHub] Unable to create entry point org.primesoft.blockshub.accessors.bukkit.griefPrevention.BlocksHubPlugin for resource /plugins/bukkit/accessors/BlocksHub-Accessor-GriefPrevention.jar.
+[08:41:27] [Server thread/INFO]: [BlocksHub] Unable to reate entry point.: unsupported version.
+[08:41:27] [Server thread/INFO]: [BlocksHub] Unable to create entry point org.primesoft.blockshub.accessors.bukkit.worldGuard.BlocksHubPlugin for resource /plugins/bukkit/accessors/BlocksHub-Accessor-WorldGuard.jar.
+[08:41:27] [Server thread/INFO]: [BlocksHub] Unable to reate entry point.: unsupported version.
+[08:41:27] [Server thread/INFO]: [BlocksHub] Unable to create entry point org.primesoft.blockshub.logger.bukkit.coreProtect.BlocksHubPlugin for resource /plugins/bukkit/loggers/BlocksHub-Logger-CoreProtect.jar.
+[08:41:27] [Server thread/INFO]: [BlocksHub] Unable to reate entry point.: unsupported version.
+[08:41:27] [Server thread/INFO]: [BlocksHub] Unable to create entry point org.primesoft.blockshub.logger.bukkit.logBlock.BlocksHubPlugin for resource /plugins/bukkit/loggers/BlocksHub-Logger-LogBlock.jar.
+[08:41:27] [Server thread/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
+[08:41:27] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: randomcolor
+[08:41:27] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: rainbowcolor
+[08:41:27] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: server
+[08:41:27] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: Animations
+[08:41:27] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: vault
+[08:41:27] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: player
+[08:41:27] [Server thread/INFO]: 6[0;32;1m placeholder hooks successfully registered![m
 
-[08:56:52] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: server
-[08:56:52] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: Animations
-[08:56:52] [Craft Scheduler Thread - 5/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m[m
+[08:41:28] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.1.1, you're on: 4.4.2
+[08:41:28] [Server thread/INFO]: [BedWars1058] Loading internal Party system. /party
+[08:41:28] [Craft Scheduler Thread - 4/INFO]: [0;36;1mImgPlacer is up to date![m
 
-[08:56:52] [Craft Scheduler Thread - 5/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m[m
-
-[08:56:52] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: vault
-[08:56:52] [Craft Scheduler Thread - 5/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m[m
-
-[08:56:52] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: player
-[08:56:52] [Craft Scheduler Thread - 5/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m[m
-
-[08:56:52] [Craft Scheduler Thread - 5/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m[m
-
-[08:56:52] [Server thread/INFO]: 6[0;32;1m placeholder hooks successfully registered![m
-
-[08:56:52] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.1.1, you're on: 4.4.2
-[08:56:52] [Server thread/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
-[08:56:52] [Craft Scheduler Thread - 5/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m[m
-
-[08:56:52] [Craft Scheduler Thread - 5/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m[m
-
-[08:56:52] [Craft Scheduler Thread - 5/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Current version: [31;1m14.2.3[0;39m[m
-
-[08:56:52] [Craft Scheduler Thread - 5/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    New version: [31;1m15.4.4[0;39m[m
-
-[08:56:52] [Craft Scheduler Thread - 5/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m    A new version is available! Downloading it now...[0;39m[m
-
-[08:56:52] [Craft Scheduler Thread - 5/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m    Update downloaded successfully, it will be applied on the next restart.[0;39m[m
-
-[08:56:52] [Craft Scheduler Thread - 5/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m[m
-
-[08:56:52] [Server thread/INFO]: [BedWars1058] Loading internal Party system. /party
-[08:56:52] [Craft Scheduler Thread - 7/INFO]: [0;36;1mImgPlacer is up to date![m
-
-[08:56:53] [Server thread/INFO]: [BedWars1058] Hook into Citizens support. /bw npc
-[08:56:53] [Server thread/INFO]: [31m[WARN] BedWars1058 may drop support for this server version in the future.
+[08:41:29] [Server thread/INFO]: [BedWars1058] Hook into Citizens support. /bw npc
+[08:41:29] [Server thread/INFO]: [31m[WARN] BedWars1058 may drop support for this server version in the future.
 Please consider upgrading to a newer paper/spigot version.[0m
 
-[08:56:53] [Craft Scheduler Thread - 15/INFO]: [Images] Loaded 1 images...
-[08:56:53] [Craft Scheduler Thread - 5/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[GitHubUpdate] Update saved as plugins/update/SkinsRestorer.jar[0;39m[m
-
-[08:56:56] [Server thread/INFO]: [BedWars1058] This server is running in MULTIARENA with auto-scale false
+[08:41:29] [Craft Scheduler Thread - 14/INFO]: [Images] Loaded 1 images...
+[08:41:32] [Server thread/INFO]: [BedWars1058] This server is running in MULTIARENA with auto-scale false
